@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Webinaire AI Protect — IA en entreprise : reprendre le contrôle sans freiner les usages | Puissance AI</title>
+<meta name="description" content="Webinaire gratuit le lundi 5 octobre 2026 de 8h30 à 10h. AI Act, charte IA : qu'est-ce que votre entreprise doit réellement mettre en place ? Puissance AI × Sparlann.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Webinaire AI Protect — AI Act, charte IA : ce que votre entreprise doit mettre en place">
+<meta property="og:description" content="Lundi 5 octobre 2026, 8h30–10h. Un webinaire pour poser un cadre sur vos usages de l'IA et votre responsabilité de dirigeant.">
+<meta property="og:image" content="assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 133 144.43'%3E%3Cpolygon fill='%230068FF' points='91.43 49.29 71.81 63.04 73.83 39.22 59.17 39.22 61.18 63.04 41.57 49.29 34.05 61.95 55.68 72.21 34.05 82.29 41.57 94.94 61.18 81.19 59.17 105.21 73.83 105.21 71.81 81.19 91.43 94.94 98.95 82.29 76.94 72.21 98.95 61.95'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Webinaire AI Protect — IA en entreprise : reprendre le contrôle sans freiner les usages",
+  "description": "AI Act, charte IA : qu'est-ce que votre entreprise doit réellement mettre en place ?",
+  "startDate": "2026-10-05T08:30:00+02:00",
+  "endDate": "2026-10-05T10:00:00+02:00",
+  "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "location": { "@type": "VirtualLocation", "url": "https://www.puissance.ai/" },
+  "organizer": { "@type": "Organization", "name": "Puissance AI", "url": "https://www.puissance.ai/" },
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR", "availability": "https://schema.org/InStock" },
+  "inLanguage": "fr"
+}
+</script>
+<style>
+  /* ============ Puissance AI design tokens (source : puissance-ai-complete-ui-lab.html) ============ */
+  :root {
+    --pai-font: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --pai-font-logo: 'Archivo', sans-serif;
+    --pai-primary: #0068FF;
+    --pai-primary-hover: #0055D4;
+    --pai-primary-active: #0047B3;
+    --pai-primary-text: #0052CC;
+    --pai-dark: #171B20;
+    --pai-hue: #EBF2FD;
+    --pai-white: #FFFFFF;
+    --pai-gray-50: #F7F8FA;
+    --pai-gray-100: #EDEFF2;
+    --pai-gray-200: #DFE2E8;
+    --pai-gray-300: #C7CCD6;
+    --pai-gray-400: #9CA3B0;
+    --pai-gray-500: #6B7280;
+    --pai-gray-600: #4B5260;
+    --pai-gray-700: #353B45;
+    --pai-gray-800: #232830;
+    --pai-gray-900: #171B20;
+    --pai-accent-purple: #7A3FF2;
+    --pai-accent-purple-tint: #ECE4FD;
+    --pai-accent-purple-on: #5A28C0;
+    --pai-accent-coral: #F2825D;
+    --pai-accent-coral-tint: #FCE9E0;
+    --pai-accent-coral-on: #B14A28;
+    --pai-muted: #6B7280;
+    --pai-muted-tint: #EDEFF2;
+    --pai-muted-on: #353B45;
+    --pai-info: var(--pai-primary);
+    --pai-info-tint: var(--pai-hue);
+    --pai-info-on: #0052CC;
+    --pai-success: #2E9E6B;
+    --pai-success-tint: #E4F5EC;
+    --pai-success-on: #1C6B47;
+    --pai-warning: #E8911C;
+    --pai-warning-tint: #FDF0D9;
+    --pai-warning-on: #9A5B0A;
+    --pai-danger: #E5484D;
+    --pai-danger-tint: #FCE4E4;
+    --pai-danger-on: #B42318;
+    --pai-text-primary: #171B20;
+    --pai-text-secondary: #5B626E;
+    --pai-text-tertiary: #9CA3B0;
+    --pai-text-on-dark: #FFFFFF;
+    --pai-text-on-primary: #FFFFFF;
+    --pai-border: #E4E7EC;
+    --pai-border-strong: #C7CCD6;
+    --pai-border-focus: #0068FF;
+    --pai-surface: #FFFFFF;
+    --pai-surface-subtle: #F7F8FA;
+    --pai-surface-hue: #EBF2FD;
+    --pai-space-2xs: 4px; --pai-space-xs: 8px; --pai-space-sm: 12px; --pai-space-md: 16px;
+    --pai-space-lg: 24px; --pai-space-xl: 32px; --pai-space-2xl: 48px; --pai-space-3xl: 64px;
+    --pai-space-4xl: 96px; --pai-space-5xl: 128px;
+    --pai-radius-xs: 4px; --pai-radius-sm: 8px; --pai-radius-md: 10px; --pai-radius-lg: 16px;
+    --pai-radius-xl: 20px; --pai-radius-2xl: 28px; --pai-radius-pill: 999px; --pai-radius-round: 50%;
+    --pai-shadow-xs: 0 1px 2px rgba(23,27,32,.06);
+    --pai-shadow-sm: 0 2px 6px rgba(23,27,32,.07);
+    --pai-shadow-md: 0 6px 16px rgba(23,27,32,.08);
+    --pai-shadow-lg: 0 12px 32px rgba(23,27,32,.10);
+    --pai-shadow-xl: 0 24px 64px rgba(23,27,32,.12);
+    --pai-shadow-card: 0 1px 2px rgba(23,27,32,.05), 0 8px 24px rgba(23,27,32,.06);
+    --pai-focus-ring: 0 0 0 3px rgba(0,104,255,.30);
+    --pai-dur-fast: 150ms; --pai-dur-base: 200ms; --pai-dur-slow: 300ms; --pai-dur-rise: 450ms;
+    --pai-ease-standard: cubic-bezier(.4,0,.2,1);
+    --pai-ease-out: cubic-bezier(0,0,.2,1);
+    --pai-ease-in: cubic-bezier(.4,0,1,1);
+    --pai-ease-spring: cubic-bezier(.34,1.56,.64,1);
+    --pai-container: 1200px;
+    --pai-z-sticky: 1010; --pai-z-overlay: 1020; --pai-z-toast: 1040;
+  }
+
+  @keyframes pai-spin { to { transform: rotate(360deg); } }
+  @keyframes pai-pulse { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.06); opacity: .7; } }
+  @keyframes pai-rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes pai-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+  @keyframes pai-tick { 0% { transform: translateY(-40%); opacity: 0; } 100% { transform: translateY(0); opacity: 1; } }
+  @keyframes pai-shine { 0% { transform: translateX(-120%) skewX(-18deg); } 100% { transform: translateX(220%) skewX(-18deg); } }
+
+  /* ============ Base ============ */
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+  body {
+    margin: 0;
+    font-family: var(--pai-font);
+    color: var(--pai-text-primary);
+    background:
+      radial-gradient(circle at 8% 2%, rgba(0,104,255,.09), transparent 28%),
+      radial-gradient(circle at 90% 16%, rgba(122,63,242,.08), transparent 26%),
+      var(--pai-white);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: geometricPrecision;
+    overflow-x: hidden;
+  }
+  ::selection { background: var(--pai-hue); color: var(--pai-primary-text); }
+  a { color: inherit; text-decoration: none; }
+  button, input, select, textarea { font: inherit; }
+  button { border: 0; cursor: pointer; }
+  img, svg { display: block; max-width: 100%; }
+  :focus-visible { outline: 0; box-shadow: var(--pai-focus-ring); }
+  p { margin: 0; }
+  strong { font-weight: 700; }
+
+  .pai-container { width: min(var(--pai-container), calc(100% - 40px)); margin: 0 auto; }
+  .pai-section { padding: var(--pai-space-4xl) 0; position: relative; }
+  .pai-section--subtle { background: var(--pai-gray-50); border-top: 1px solid var(--pai-gray-100); border-bottom: 1px solid var(--pai-gray-100); }
+  .pai-section__head { display: grid; gap: var(--pai-space-sm); max-width: 820px; margin-bottom: var(--pai-space-2xl); }
+  .pai-section__head.center { margin-inline: auto; text-align: center; justify-items: center; }
+  .pai-eyebrow { color: var(--pai-primary-text); font-size: 12px; line-height: 1.4; letter-spacing: .12em; text-transform: uppercase; font-weight: 800; display: inline-flex; align-items: center; gap: 8px; }
+  .pai-eyebrow .pai-mark { width: 14px; color: var(--pai-accent-purple); }
+  .pai-display { font-size: clamp(38px, 6.4vw, 68px); line-height: 1.02; letter-spacing: -.04em; font-weight: 900; margin: 0; }
+  .pai-h1 { font-size: clamp(32px, 5vw, 56px); line-height: 1.06; letter-spacing: -.035em; font-weight: 900; margin: 0; }
+  .pai-h2 { font-size: clamp(28px, 4vw, 42px); line-height: 1.1; letter-spacing: -.03em; font-weight: 800; margin: 0; }
+  .pai-h3 { font-size: clamp(21px, 3vw, 28px); line-height: 1.2; letter-spacing: -.015em; font-weight: 800; margin: 0; }
+  .pai-h4 { font-size: 20px; line-height: 1.3; font-weight: 700; margin: 0; letter-spacing: -.01em; }
+  .pai-lead { font-size: 18px; color: var(--pai-text-secondary); margin: 0; max-width: 760px; line-height: 1.6; }
+  .pai-lead.lg { font-size: clamp(19px, 2.2vw, 22px); }
+  .pai-copy { color: var(--pai-text-secondary); margin: 0; }
+  .pai-copy.strong { color: var(--pai-dark); font-weight: 600; }
+  .pai-caption { font-size: 12px; line-height: 1.4; letter-spacing: .04em; color: var(--pai-text-tertiary); font-weight: 600; text-transform: uppercase; }
+  .pai-mini { font-size: 13px; color: var(--pai-text-secondary); }
+  .pai-stack { display: grid; gap: var(--pai-space-md); }
+  .pai-stack-lg { display: grid; gap: var(--pai-space-lg); }
+  .pai-row { display: flex; flex-wrap: wrap; gap: var(--pai-space-sm); align-items: center; }
+  .pai-row-between { display: flex; gap: var(--pai-space-md); justify-content: space-between; align-items: center; flex-wrap: wrap; }
+  .pai-grid { display: grid; gap: var(--pai-space-lg); }
+  .pai-grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pai-grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .pai-grid.four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .pai-divider { height: 1px; background: var(--pai-gray-100); width: 100%; }
+  .pai-mark { color: currentColor; width: 1em; height: 1.09em; flex: 0 0 auto; }
+  .pai-mark .pai-mark-fill { fill: currentColor; }
+  .pai-pulse { animation: pai-pulse 1.8s var(--pai-ease-standard) infinite; transform-origin: center; }
+  .pai-spinner { animation: pai-spin 1s linear infinite; transform-origin: center; }
+
+  /* Logo */
+  .pai-wordmark { display: inline-flex; align-items: baseline; gap: 2px; font-family: var(--pai-font-logo); font-weight: 700; letter-spacing: -.02em; color: var(--pai-dark); white-space: nowrap; font-size: 22px; }
+  .pai-wordmark sup { font-size: .45em; letter-spacing: -.03em; transform: translateY(-.45em); display: inline-block; margin-left: 2px; }
+  .pai-logo { display: inline-flex; gap: 10px; align-items: center; }
+  .pai-logo__mark { width: 24px; height: 26px; color: var(--pai-dark); }
+  .pai-logo--dark, .pai-logo--dark .pai-wordmark, .pai-logo--dark .pai-logo__mark { color: white; }
+  .pai-product-logo { display: inline-flex; align-items: baseline; letter-spacing: -.04em; font-size: clamp(30px, 6vw, 64px); line-height: 1; }
+  .pai-product-logo .light { font-weight: 300; }
+  .pai-product-logo .strong { font-weight: 700; }
+
+  /* Topbar */
+  .pai-topbar { position: sticky; top: 0; z-index: var(--pai-z-sticky); height: 64px; display: flex; align-items: center; background: rgba(255,255,255,.88); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); border-bottom: 1px solid var(--pai-gray-100); transition: box-shadow var(--pai-dur-base); }
+  .pai-topbar.is-scrolled { box-shadow: var(--pai-shadow-sm); }
+  .pai-topbar__inner { display: flex; align-items: center; justify-content: space-between; gap: var(--pai-space-lg); }
+  .pai-nav { display: flex; align-items: center; gap: 22px; color: var(--pai-text-secondary); font-size: 15px; font-weight: 600; }
+  .pai-nav a { transition: color var(--pai-dur-fast); }
+  .pai-nav a:hover { color: var(--pai-dark); }
+  .pai-topbar__date { display: inline-flex; }
+
+  /* Buttons */
+  .pai-btn { position: relative; overflow: hidden; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 0 20px; border-radius: var(--pai-radius-md); font-size: 15px; line-height: 1; font-weight: 700; letter-spacing: .01em; transition: transform var(--pai-dur-fast) var(--pai-ease-out), box-shadow var(--pai-dur-fast), background var(--pai-dur-fast), border-color var(--pai-dur-fast), color var(--pai-dur-fast); white-space: nowrap; }
+  .pai-btn:hover { transform: translateY(-2px); box-shadow: var(--pai-shadow-md); }
+  .pai-btn:active { transform: translateY(0); box-shadow: var(--pai-shadow-xs); }
+  .pai-btn--lg { min-height: 54px; padding: 0 28px; font-size: 16px; }
+  .pai-btn--dark { background: var(--pai-dark); color: var(--pai-text-on-dark); }
+  .pai-btn--dark:hover { background: var(--pai-gray-800); }
+  .pai-btn--blue { background: var(--pai-primary); color: var(--pai-text-on-primary); box-shadow: 0 8px 20px rgba(0,104,255,.22); }
+  .pai-btn--blue:hover { background: var(--pai-primary-hover); box-shadow: 0 12px 28px rgba(0,104,255,.3); }
+  .pai-btn--blue::after { content: ""; position: absolute; top: 0; bottom: 0; width: 40%; background: linear-gradient(90deg, transparent, rgba(255,255,255,.28), transparent); transform: translateX(-120%) skewX(-18deg); pointer-events: none; }
+  .pai-btn--blue:hover::after { animation: pai-shine .7s var(--pai-ease-out); }
+  .pai-btn--secondary { background: var(--pai-white); color: var(--pai-dark); border: 1.5px solid var(--pai-border-strong); }
+  .pai-btn--secondary:hover { border-color: var(--pai-dark); }
+  .pai-btn--ghost { background: transparent; color: var(--pai-dark); }
+  .pai-btn--ghost:hover { background: var(--pai-gray-50); box-shadow: none; }
+  .pai-btn[disabled] { background: var(--pai-gray-200); color: var(--pai-gray-400); pointer-events: none; box-shadow: none; transform: none; }
+  .pai-btn .arrow { transition: transform var(--pai-dur-fast) var(--pai-ease-out); }
+  .pai-btn:hover .arrow { transform: translateX(4px); }
+  .pai-highlight-link { display: inline-flex; align-items: center; gap: 6px; color: var(--pai-primary-text); font-weight: 800; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+  .pai-highlight-link span { transition: transform var(--pai-dur-fast) var(--pai-ease-out); }
+  .pai-highlight-link:hover span { transform: translateX(4px); }
+  .pai-link { color: var(--pai-primary-text); text-decoration: underline; text-underline-offset: 3px; font-weight: 600; }
+
+  /* Pills / badges */
+  .pai-pill { display: inline-flex; align-items: center; gap: 7px; padding: 5px 12px; border-radius: var(--pai-radius-pill); font-size: 13px; line-height: 1.45; font-weight: 700; background: var(--pai-muted-tint); color: var(--pai-muted-on); white-space: nowrap; }
+  .pai-pill--blue { background: var(--pai-hue); color: var(--pai-primary-text); }
+  .pai-pill--purple { background: var(--pai-accent-purple-tint); color: var(--pai-accent-purple-on); }
+  .pai-pill--coral { background: var(--pai-accent-coral-tint); color: var(--pai-accent-coral-on); }
+  .pai-pill--success { background: var(--pai-success-tint); color: var(--pai-success-on); }
+  .pai-pill--ghost { background: rgba(255,255,255,.12); color: white; }
+  .pai-pill--outline { background: transparent; border: 1.5px solid var(--pai-gray-200); color: var(--pai-text-secondary); }
+  .pai-pill--strike { text-decoration: line-through; text-decoration-color: var(--pai-accent-coral); text-decoration-thickness: 2px; }
+  .pai-status-dot { width: 8px; height: 8px; border-radius: var(--pai-radius-round); background: currentColor; }
+  .pai-status-dot.live { box-shadow: 0 0 0 0 rgba(46,158,107,.5); animation: pai-live 1.8s infinite; }
+  @keyframes pai-live { 0% { box-shadow: 0 0 0 0 rgba(46,158,107,.45); } 70% { box-shadow: 0 0 0 8px rgba(46,158,107,0); } 100% { box-shadow: 0 0 0 0 rgba(46,158,107,0); } }
+
+  /* Cards */
+  .pai-card { background: var(--pai-white); border: 1px solid var(--pai-gray-100); border-radius: var(--pai-radius-lg); box-shadow: var(--pai-shadow-card); padding: var(--pai-space-lg); transition: transform var(--pai-dur-fast) var(--pai-ease-out), box-shadow var(--pai-dur-fast) var(--pai-ease-out), border-color var(--pai-dur-fast); }
+  .pai-card:hover { transform: translateY(-2px); box-shadow: var(--pai-shadow-md); }
+  .pai-card--flat, .pai-card--flat:hover { transform: none; box-shadow: var(--pai-shadow-card); }
+  .pai-card--hue { background: var(--pai-hue); border-color: transparent; box-shadow: none; }
+  .pai-card--dark { background: radial-gradient(circle at 20% 0%, #2c3440 0, var(--pai-dark) 42%, #111418 100%); color: white; border: 0; }
+  .pai-card--dark .pai-copy, .pai-card--dark .pai-mini, .pai-card--dark .pai-caption { color: rgba(255,255,255,.72); }
+  .pai-card--feature { border-radius: var(--pai-radius-2xl); padding: var(--pai-space-xl); }
+  .pai-card__icon { width: 46px; height: 46px; border-radius: 14px; background: var(--pai-hue); color: var(--pai-primary); display: grid; place-items: center; margin-bottom: 14px; }
+  .pai-card__icon svg { width: 22px; height: 22px; }
+  .pai-card__icon.coral { background: var(--pai-accent-coral-tint); color: var(--pai-accent-coral-on); }
+  .pai-card__icon.purple { background: var(--pai-accent-purple-tint); color: var(--pai-accent-purple-on); }
+  .pai-icon-outline { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2.25; stroke-linecap: round; stroke-linejoin: round; }
+
+  /* Alerts */
+  .pai-alert { display: grid; grid-template-columns: auto 1fr; gap: var(--pai-space-sm); padding: var(--pai-space-md) var(--pai-space-lg); border-left: 4px solid var(--bar); border-radius: 0 var(--pai-radius-md) var(--pai-radius-md) 0; background: var(--bg); color: var(--text); align-items: start; }
+  .pai-alert.info { --bar: var(--pai-primary); --bg: var(--pai-hue); --text: var(--pai-info-on); }
+  .pai-alert.success { --bar: var(--pai-success); --bg: var(--pai-success-tint); --text: var(--pai-success-on); }
+  .pai-alert.danger { --bar: var(--pai-danger); --bg: var(--pai-danger-tint); --text: var(--pai-danger-on); }
+  .pai-alert .pai-mark { width: 18px; margin-top: 3px; }
+  .pai-alert strong { display: block; margin-bottom: 2px; }
+  .pai-alert p { color: inherit; opacity: .9; }
+
+  /* Accordion */
+  .pai-accordion { border-top: 1px solid var(--pai-gray-200); }
+  .pai-acc-item { border-bottom: 1px solid var(--pai-gray-200); }
+  .pai-acc-trigger { width: 100%; background: transparent; display: flex; justify-content: space-between; align-items: center; gap: var(--pai-space-md); padding: 22px 4px; color: var(--pai-dark); font-weight: 800; font-size: clamp(17px, 2vw, 20px); letter-spacing: -.01em; text-align: left; border-radius: var(--pai-radius-sm); transition: color var(--pai-dur-fast); }
+  .pai-acc-trigger:hover { color: var(--pai-primary-text); }
+  .pai-acc-trigger .num { flex: 0 0 auto; width: 34px; height: 34px; border-radius: var(--pai-radius-round); background: var(--pai-hue); color: var(--pai-primary-text); display: grid; place-items: center; font-size: 13px; font-weight: 900; margin-right: 6px; transition: background var(--pai-dur-fast), color var(--pai-dur-fast); }
+  .pai-acc-item.open .num { background: var(--pai-primary); color: white; }
+  .pai-acc-trigger .txt { flex: 1; }
+  .pai-acc-trigger .chev { flex: 0 0 auto; width: 32px; height: 32px; border-radius: var(--pai-radius-round); border: 1.5px solid var(--pai-gray-200); display: grid; place-items: center; transition: transform var(--pai-dur-base) var(--pai-ease-standard), background var(--pai-dur-fast), border-color var(--pai-dur-fast); }
+  .pai-acc-trigger .chev svg { width: 14px; height: 14px; }
+  .pai-acc-item.open .chev { transform: rotate(180deg); background: var(--pai-dark); border-color: var(--pai-dark); color: white; }
+  .pai-acc-panel { display: grid; grid-template-rows: 0fr; transition: grid-template-rows var(--pai-dur-slow) var(--pai-ease-standard); }
+  .pai-acc-item.open .pai-acc-panel { grid-template-rows: 1fr; }
+  .pai-acc-panel > div { overflow: hidden; }
+  .pai-acc-panel ul { margin: 0 0 22px 46px; padding: 0; list-style: none; display: grid; gap: 8px; color: var(--pai-text-secondary); font-size: 16px; }
+  .pai-acc-panel li { position: relative; padding-left: 22px; }
+  .pai-acc-panel li::before { content: "→"; position: absolute; left: 0; color: var(--pai-primary); font-weight: 800; }
+
+  /* Forms */
+  .pai-form { display: grid; gap: var(--pai-space-md); }
+  .pai-form-row { display: grid; gap: var(--pai-space-md); grid-template-columns: 1fr 1fr; }
+  .pai-field { display: grid; gap: 7px; }
+  .pai-label { font-size: 14px; line-height: 1.3; font-weight: 700; color: var(--pai-dark); }
+  .pai-label .req { color: var(--pai-primary); margin-left: 2px; }
+  .pai-label .opt { color: var(--pai-text-tertiary); font-weight: 500; margin-left: 4px; }
+  .pai-helper { font-size: 13px; color: var(--pai-text-secondary); min-height: 0; }
+  .pai-input, .pai-select { width: 100%; min-height: 46px; border: 1px solid var(--pai-gray-200); border-radius: var(--pai-radius-sm); background: white; color: var(--pai-dark); padding: 0 14px; font-size: 15px; transition: border-color var(--pai-dur-fast), box-shadow var(--pai-dur-fast), background var(--pai-dur-fast); appearance: none; -webkit-appearance: none; }
+  .pai-select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%236B7280' stroke-width='2.25' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m4 6 4 4 4-4'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 40px; }
+  .pai-select:invalid, .pai-select.is-placeholder { color: var(--pai-gray-400); }
+  .pai-input::placeholder { color: var(--pai-gray-400); }
+  .pai-input:hover, .pai-select:hover { border-color: var(--pai-gray-300); }
+  .pai-input:focus, .pai-select:focus { outline: 0; border-color: var(--pai-primary); box-shadow: var(--pai-focus-ring); }
+  .pai-field--error .pai-input, .pai-field--error .pai-select { border-color: var(--pai-danger); }
+  .pai-field--error .pai-helper { color: var(--pai-danger-on); }
+  .pai-field .pai-helper.err { display: none; }
+  .pai-field--error .pai-helper.err { display: block; }
+  .pai-checkrow { display: flex; gap: 12px; align-items: flex-start; color: var(--pai-text-secondary); font-size: 14px; line-height: 1.5; cursor: pointer; }
+  .pai-checkbox { width: 20px; height: 20px; accent-color: var(--pai-primary); flex: 0 0 auto; margin: 2px 0 0; cursor: pointer; }
+  .pai-fieldset { border: 0; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .pai-fieldset legend { padding: 0; font-size: 15px; font-weight: 700; color: var(--pai-dark); margin-bottom: 4px; line-height: 1.35; }
+  .pai-choice-group { display: flex; flex-wrap: wrap; gap: 8px; }
+  .pai-choice { position: relative; }
+  .pai-choice input { position: absolute; opacity: 0; inset: 0; width: 100%; height: 100%; margin: 0; cursor: pointer; }
+  .pai-choice span { display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 0 14px; border-radius: var(--pai-radius-pill); background: white; border: 1.5px solid var(--pai-gray-200); color: var(--pai-text-secondary); font-weight: 600; font-size: 14px; transition: all var(--pai-dur-fast) var(--pai-ease-out); cursor: pointer; }
+  .pai-choice span::before { content: ""; width: 14px; height: 14px; border-radius: 50%; border: 1.5px solid var(--pai-gray-300); transition: all var(--pai-dur-fast); flex: 0 0 auto; }
+  .pai-choice:hover span { border-color: var(--pai-gray-300); }
+  .pai-choice input:checked + span { background: var(--pai-hue); border-color: var(--pai-primary); color: var(--pai-primary-text); }
+  .pai-choice input:checked + span::before { border: 4.5px solid var(--pai-primary); background: white; }
+  .pai-choice input:focus-visible + span { box-shadow: var(--pai-focus-ring); }
+  .pai-fieldset.pai-field--error .pai-choice span { border-color: var(--pai-danger); }
+  .pai-form__block { display: grid; gap: var(--pai-space-md); padding-top: var(--pai-space-lg); margin-top: var(--pai-space-xs); border-top: 1px solid var(--pai-gray-100); }
+  .pai-form__block-title { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 17px; letter-spacing: -.01em; }
+  .pai-form__block-title .idx { width: 28px; height: 28px; border-radius: var(--pai-radius-round); background: var(--pai-dark); color: white; display: grid; place-items: center; font-size: 12px; font-weight: 900; }
+  .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+  /* Toast */
+  .pai-toast-zone { position: fixed; right: 24px; bottom: 24px; z-index: var(--pai-z-toast); display: grid; gap: 10px; pointer-events: none; }
+  .pai-toast { width: min(360px, calc(100vw - 48px)); background: white; border: 1px solid var(--pai-gray-100); border-radius: var(--pai-radius-md); box-shadow: var(--pai-shadow-lg); padding: var(--pai-space-md); display: grid; grid-template-columns: auto 1fr; gap: var(--pai-space-sm); align-items: start; pointer-events: auto; animation: pai-rise var(--pai-dur-base) var(--pai-ease-out) both; }
+  .pai-toast .pai-mark { width: 20px; color: var(--pai-success); margin-top: 2px; }
+  .pai-toast strong { display: block; }
+
+  /* Footer */
+  .pai-footer { padding: var(--pai-space-3xl) 0 var(--pai-space-xl); background: var(--pai-dark); color: white; }
+  .pai-footer .pai-copy, .pai-footer .pai-mini { color: rgba(255,255,255,.72); }
+  .pai-footer a:hover { color: white; text-decoration: underline; text-underline-offset: 3px; }
+  .pai-footer__grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: var(--pai-space-2xl); }
+  .pai-footer__bottom { margin-top: var(--pai-space-2xl); padding-top: var(--pai-space-lg); border-top: 1px solid rgba(255,255,255,.12); display: flex; justify-content: space-between; gap: var(--pai-space-md); flex-wrap: wrap; font-size: 13px; color: rgba(255,255,255,.6); }
+
+  /* ============ Scroll reveal ============ */
+  [data-reveal] { opacity: 0; transform: translateY(22px); transition: opacity .7s var(--pai-ease-out), transform .7s var(--pai-ease-out); transition-delay: var(--d, 0ms); will-change: opacity, transform; }
+  [data-reveal].in { opacity: 1; transform: none; }
+  .pai-stagger > * { opacity: 0; transform: translateY(22px); transition: opacity .6s var(--pai-ease-out), transform .6s var(--pai-ease-out); }
+  .pai-stagger.in > * { opacity: 1; transform: none; }
+  .pai-stagger.in > *:nth-child(1) { transition-delay: 0ms; }
+  .pai-stagger.in > *:nth-child(2) { transition-delay: 70ms; }
+  .pai-stagger.in > *:nth-child(3) { transition-delay: 140ms; }
+  .pai-stagger.in > *:nth-child(4) { transition-delay: 210ms; }
+  .pai-stagger.in > *:nth-child(5) { transition-delay: 280ms; }
+  .pai-stagger.in > *:nth-child(6) { transition-delay: 350ms; }
+
+  /* ============ Hero ============ */
+  .pai-hero { padding: clamp(56px, 8vw, 96px) 0 clamp(56px, 8vw, 96px); position: relative; overflow: hidden; }
+  .pai-hero::before { content: ""; position: absolute; inset: 0; pointer-events: none; z-index: -1; background:
+      radial-gradient(circle at 78% 30%, rgba(0,104,255,.12), transparent 30rem),
+      radial-gradient(circle at 92% 70%, rgba(122,63,242,.10), transparent 22rem); }
+  .pai-hero__inner { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(320px, .95fr); gap: var(--pai-space-3xl); align-items: center; }
+  .pai-hero__copy { display: grid; gap: var(--pai-space-lg); }
+  .pai-hero__copy > * { animation: pai-rise var(--pai-dur-rise) var(--pai-ease-out) both; }
+  .pai-hero__copy > *:nth-child(1) { animation-delay: 60ms; }
+  .pai-hero__copy > *:nth-child(2) { animation-delay: 160ms; }
+  .pai-hero__copy > *:nth-child(3) { animation-delay: 260ms; }
+  .pai-hero__copy > *:nth-child(4) { animation-delay: 360ms; }
+  .pai-hero__copy > *:nth-child(5) { animation-delay: 460ms; }
+  .pai-hero__copy .pai-display em { font-style: normal; color: var(--pai-primary); }
+  .pai-hero__meta { display: flex; flex-wrap: wrap; gap: 10px 22px; color: var(--pai-text-secondary); font-size: 15px; font-weight: 600; }
+  .pai-hero__meta span { display: inline-flex; align-items: center; gap: 8px; }
+  .pai-hero__meta svg { width: 18px; height: 18px; color: var(--pai-primary); }
+  .pai-hero__panel { border-radius: var(--pai-radius-2xl); background: linear-gradient(135deg, rgba(235,242,253,.95), rgba(255,255,255,.98)), radial-gradient(circle at 80% 10%, rgba(0,104,255,.2), transparent 34%); box-shadow: var(--pai-shadow-xl); border: 1px solid rgba(0,104,255,.08); padding: var(--pai-space-lg); position: relative; overflow: hidden; animation: pai-rise .7s var(--pai-ease-out) .25s both; }
+  .pai-hero__panel::before { content: ""; position: absolute; inset: 0; background:
+      linear-gradient(90deg, transparent 0 47%, rgba(0,104,255,.10) 47% 48%, transparent 48% 100%),
+      linear-gradient(0deg, transparent 0 47%, rgba(23,27,32,.06) 47% 48%, transparent 48% 100%);
+    background-size: 42px 42px; opacity: .45; pointer-events: none; }
+  .pai-hero__mock { position: relative; z-index: 1; display: grid; gap: var(--pai-space-md); }
+  .pai-event-card { background: white; border: 1px solid var(--pai-gray-100); border-radius: 20px; box-shadow: var(--pai-shadow-lg); padding: var(--pai-space-lg); display: grid; gap: var(--pai-space-md); }
+  .pai-event-card__date { display: flex; gap: 16px; align-items: center; }
+  .pai-event-card__day { width: 68px; height: 72px; border-radius: 16px; background: var(--pai-dark); color: white; display: grid; place-items: center; text-align: center; line-height: 1; flex: 0 0 auto; }
+  .pai-event-card__day strong { font-size: 30px; letter-spacing: -.04em; display: block; }
+  .pai-event-card__day small { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; font-weight: 800; opacity: .8; }
+  .pai-event-card__date h3 { margin: 0; font-size: 18px; letter-spacing: -.02em; line-height: 1.25; }
+  .pai-countdown { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .pai-countdown div { background: var(--pai-gray-50); border: 1px solid var(--pai-gray-100); border-radius: var(--pai-radius-md); padding: 10px 6px; text-align: center; }
+  .pai-countdown strong { display: block; font-size: 24px; line-height: 1.1; letter-spacing: -.04em; font-variant-numeric: tabular-nums; }
+  .pai-countdown strong.tick { animation: pai-tick .35s var(--pai-ease-out); }
+  .pai-countdown span { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--pai-text-tertiary); font-weight: 700; }
+  .pai-event-card__list { display: grid; gap: 8px; font-size: 14px; color: var(--pai-text-secondary); }
+  .pai-event-card__list span { display: flex; gap: 10px; align-items: center; }
+  .pai-event-card__list svg { width: 18px; height: 18px; color: var(--pai-success); flex: 0 0 auto; }
+  .pai-partners { background: white; border: 1px solid var(--pai-gray-100); border-radius: 16px; padding: 14px 18px; display: flex; align-items: center; justify-content: space-between; gap: 12px; box-shadow: var(--pai-shadow-sm); }
+  .pai-partners .x { color: var(--pai-gray-400); font-weight: 800; }
+  .pai-partners .sparlann { font-weight: 800; letter-spacing: -.02em; font-size: 18px; color: var(--pai-dark); }
+  .pai-partners .sparlann small { display: block; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--pai-text-tertiary); font-weight: 700; }
+  .pai-floating-badge { position: absolute; z-index: 2; right: 22px; top: 18px; background: var(--pai-dark); color: white; padding: 8px 14px; border-radius: var(--pai-radius-pill); font-size: 12px; font-weight: 800; letter-spacing: .04em; display: inline-flex; align-items: center; gap: 8px; box-shadow: var(--pai-shadow-md); animation: pai-float 4s ease-in-out infinite; }
+
+  /* ============ Story sections ============ */
+  .pai-prose { max-width: 720px; display: grid; gap: 18px; font-size: clamp(17px, 1.8vw, 19px); color: var(--pai-text-secondary); line-height: 1.65; }
+  .pai-prose .big { font-size: clamp(22px, 2.6vw, 30px); line-height: 1.25; letter-spacing: -.025em; font-weight: 800; color: var(--pai-dark); }
+  .pai-prose .q { font-weight: 700; color: var(--pai-dark); }
+  .pai-date-card { display: grid; gap: 8px; }
+  .pai-date-card .pai-caption { color: var(--pai-primary-text); }
+  .pai-date-card strong { font-size: clamp(22px, 2.4vw, 28px); letter-spacing: -.03em; line-height: 1.15; }
+  .pai-two { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: var(--pai-space-3xl); align-items: start; }
+  .pai-two.rev { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); }
+  .pai-usecases { display: flex; flex-wrap: wrap; gap: 8px; }
+  .pai-usecases span { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: var(--pai-radius-pill); background: white; border: 1px solid var(--pai-gray-200); font-size: 14px; font-weight: 600; color: var(--pai-dark); }
+  .pai-usecases span::before { content: "✻"; color: var(--pai-accent-purple); font-size: 12px; }
+  .pai-chat { display: grid; gap: 12px; }
+  .pai-bubble { max-width: 88%; padding: 14px 18px; border-radius: 18px; font-size: 16px; line-height: 1.5; position: relative; }
+  .pai-bubble.them { background: white; color: var(--pai-dark); border: 1px solid var(--pai-gray-100); border-bottom-left-radius: 6px; box-shadow: var(--pai-shadow-sm); justify-self: start; font-weight: 600; }
+  .pai-bubble.you { background: var(--pai-primary); color: white; border-bottom-right-radius: 6px; justify-self: end; }
+  .pai-bubble.you.typing { display: inline-flex; gap: 5px; align-items: center; min-height: 44px; }
+  .pai-bubble .dot { width: 7px; height: 7px; border-radius: 50%; background: rgba(255,255,255,.85); animation: pai-typing 1.2s infinite; }
+  .pai-bubble .dot:nth-child(2) { animation-delay: .2s; } .pai-bubble .dot:nth-child(3) { animation-delay: .4s; }
+  @keyframes pai-typing { 0%, 60%, 100% { transform: translateY(0); opacity: .5; } 30% { transform: translateY(-5px); opacity: 1; } }
+  .pai-bubble .who { display: block; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; font-weight: 800; opacity: .6; margin-bottom: 4px; }
+  .pai-data-list { display: grid; gap: 10px; }
+  .pai-data-list span { display: flex; gap: 12px; align-items: center; font-weight: 600; color: var(--pai-dark); font-size: 16px; }
+  .pai-data-list span i { width: 28px; height: 28px; border-radius: 9px; background: var(--pai-accent-coral-tint); color: var(--pai-accent-coral-on); display: grid; place-items: center; font-style: normal; font-size: 13px; font-weight: 900; flex: 0 0 auto; }
+  .pai-situation { display: grid; gap: 10px; padding: var(--pai-space-lg); }
+  .pai-situation p { font-size: 16px; color: var(--pai-dark); font-weight: 600; line-height: 1.45; }
+  .pai-situation .pai-caption { color: var(--pai-accent-coral-on); }
+  .pai-flip { display: grid; gap: 14px; padding: clamp(24px, 4vw, 40px); border-radius: var(--pai-radius-2xl); background: var(--pai-dark); color: white; position: relative; overflow: hidden; }
+  .pai-flip::after { content: ""; position: absolute; right: -60px; top: -60px; width: 260px; height: 260px; border-radius: 50%; background: radial-gradient(circle, rgba(0,104,255,.45), transparent 65%); pointer-events: none; }
+  .pai-flip .old { color: rgba(255,255,255,.55); text-decoration: line-through; text-decoration-color: var(--pai-accent-coral); font-size: clamp(18px, 2vw, 22px); font-weight: 600; }
+  .pai-flip .new { font-size: clamp(24px, 3vw, 36px); font-weight: 900; letter-spacing: -.03em; line-height: 1.15; }
+  .pai-flip .new em { font-style: normal; color: #7DB2FF; }
+  .pai-steps { display: grid; gap: 0; position: relative; }
+  .pai-step { display: flex; gap: 14px; align-items: center; padding: 12px 0; color: var(--pai-text-secondary); font-weight: 600; font-size: 16px; }
+  .pai-step i { width: 30px; height: 30px; border-radius: 50%; background: var(--pai-gray-100); color: var(--pai-gray-600); display: grid; place-items: center; font-style: normal; font-size: 12px; font-weight: 900; flex: 0 0 auto; }
+  .pai-step.done { text-decoration: line-through; text-decoration-color: var(--pai-gray-300); }
+  .pai-then { display: grid; gap: 10px; }
+  .pai-then span { display: flex; gap: 12px; align-items: flex-start; padding: 12px 16px; border-radius: var(--pai-radius-md); background: white; border: 1px solid var(--pai-gray-100); font-weight: 600; color: var(--pai-dark); box-shadow: var(--pai-shadow-xs); }
+  .pai-then span::before { content: "!"; width: 22px; height: 22px; border-radius: 50%; background: var(--pai-accent-coral-tint); color: var(--pai-accent-coral-on); display: grid; place-items: center; font-size: 12px; font-weight: 900; flex: 0 0 auto; margin-top: 2px; }
+  .pai-questions { display: flex; flex-wrap: wrap; gap: 8px 18px; font-weight: 800; font-size: clamp(18px, 2vw, 22px); letter-spacing: -.02em; color: var(--pai-dark); }
+  .pai-questions span::before { content: "?"; color: var(--pai-primary); margin-right: 6px; }
+
+  /* Big CTA */
+  .pai-cta-band { border-radius: var(--pai-radius-2xl); padding: clamp(32px, 5vw, 64px); color: white; position: relative; overflow: hidden; background:
+      radial-gradient(circle at 92% 0, rgba(0,104,255,.5), transparent 32%),
+      radial-gradient(circle at 0 100%, rgba(122,63,242,.35), transparent 34%),
+      linear-gradient(135deg, #171B20, #232830); box-shadow: var(--pai-shadow-xl); display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, .7fr); gap: var(--pai-space-2xl); align-items: center; }
+  .pai-cta-band .pai-mark.bg { position: absolute; right: -40px; bottom: -60px; width: 320px; height: 350px; color: rgba(255,255,255,.04); pointer-events: none; }
+  .pai-cta-band .pai-copy { color: rgba(255,255,255,.75); }
+  .pai-cta-band__side { display: grid; gap: 10px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1); border-radius: var(--pai-radius-xl); padding: var(--pai-space-lg); position: relative; z-index: 1; }
+  .pai-cta-band__side strong { font-size: 22px; letter-spacing: -.03em; line-height: 1.2; }
+  .pai-cta-band__side .pai-mini { color: rgba(255,255,255,.7); }
+
+  /* Speakers */
+  .pai-speaker { padding: 0; overflow: hidden; display: grid; grid-template-rows: auto 1fr; }
+  .pai-speaker__photo { aspect-ratio: 1 / 1; background: linear-gradient(160deg, var(--pai-hue), #fff 60%, rgba(122,63,242,.12)); position: relative; overflow: hidden; }
+  .pai-speaker__photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; transition: transform .6s var(--pai-ease-out); }
+  .pai-speaker__photo img.zoom { transform: scale(1.32); }
+  .pai-speaker:hover .pai-speaker__photo img { transform: scale(1.04); }
+  .pai-speaker:hover .pai-speaker__photo img.zoom { transform: scale(1.36); }
+  .pai-speaker__initials { position: absolute; inset: 0; display: grid; place-items: center; font-size: 64px; font-weight: 900; letter-spacing: -.05em; color: var(--pai-primary-text); }
+  .pai-speaker__photo .pai-pill { position: absolute; left: 14px; top: 14px; box-shadow: var(--pai-shadow-sm); }
+  .pai-speaker__body { padding: var(--pai-space-lg); display: grid; gap: 6px; align-content: start; }
+  .pai-speaker__body h3 { margin: 0; font-size: 20px; letter-spacing: -.02em; line-height: 1.2; }
+  .pai-speaker__role { color: var(--pai-text-secondary); font-size: 14px; line-height: 1.45; }
+  .pai-speaker__org { font-weight: 800; font-size: 14px; color: var(--pai-dark); }
+  .pai-speaker__links { margin-top: 10px; }
+  .pai-speaker__links a { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 700; color: var(--pai-primary-text); padding: 8px 12px; border-radius: var(--pai-radius-sm); background: var(--pai-hue); transition: background var(--pai-dur-fast); }
+  .pai-speaker__links a:hover { background: #dbe8fc; }
+  .pai-speaker__links svg { width: 16px; height: 16px; }
+  .pai-org { display: grid; gap: 12px; }
+  .pai-org .pai-wordmark { font-size: 26px; }
+  .pai-org__name { font-weight: 800; font-size: 26px; letter-spacing: -.03em; }
+  .pai-org__name small { display: block; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--pai-text-tertiary); font-weight: 700; margin-top: 2px; }
+  .pai-triple { display: flex; flex-wrap: wrap; gap: 10px 26px; font-weight: 800; font-size: clamp(18px, 2.2vw, 24px); letter-spacing: -.02em; justify-content: center; }
+  .pai-triple span::before { content: "✻"; color: var(--pai-accent-purple); margin-right: 8px; font-size: .8em; }
+
+  /* AI Protect */
+  .pai-product-hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--pai-space-3xl); align-items: center; }
+  .pai-product-shot { border-radius: var(--pai-radius-2xl); background: var(--pai-dark); color: white; padding: clamp(28px, 4vw, 44px); display: grid; gap: 22px; box-shadow: var(--pai-shadow-xl); position: relative; overflow: hidden; }
+  .pai-product-shot::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 85% 15%, rgba(0,104,255,.42), transparent 40%); pointer-events: none; }
+  .pai-product-shot > * { position: relative; }
+  .pai-product-shot .pai-product-logo { color: white; }
+  .pai-product-shot .pai-mini { color: rgba(255,255,255,.7); }
+  .pai-tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .pai-tile { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1); border-radius: var(--pai-radius-lg); padding: 16px; display: grid; gap: 8px; }
+  .pai-tile i { width: 30px; height: 30px; border-radius: 9px; display: grid; place-items: center; font-style: normal; font-weight: 900; font-size: 14px; }
+  .pai-tile i.ok { background: rgba(46,158,107,.25); color: #8BE0B4; }
+  .pai-tile i.no { background: rgba(229,72,77,.25); color: #FF9DA1; }
+  .pai-tile i.cond { background: rgba(232,145,28,.25); color: #FFC97A; }
+  .pai-tile i.who { background: rgba(0,104,255,.3); color: #9DC4FF; }
+  .pai-tile strong { font-size: 15px; line-height: 1.3; }
+
+  /* Registration */
+  .pai-register { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: var(--pai-space-2xl); align-items: start; }
+  .pai-register__aside { position: sticky; top: 88px; display: grid; gap: var(--pai-space-lg); }
+  .pai-register__aside .pai-card--dark { padding: var(--pai-space-xl); }
+  .pai-register__aside ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+  .pai-register__aside li { display: flex; gap: 10px; align-items: flex-start; color: rgba(255,255,255,.8); font-size: 15px; }
+  .pai-register__aside li svg { width: 18px; height: 18px; color: #7DB2FF; flex: 0 0 auto; margin-top: 3px; }
+  .pai-register__form { padding: clamp(24px, 4vw, 40px); }
+  .pai-submit-wrap { display: grid; gap: 12px; margin-top: var(--pai-space-xs); }
+  .pai-submit-wrap .pai-btn { width: 100%; }
+  .pai-submit-wrap .pai-mini { text-align: center; }
+  .pai-success { display: none; text-align: center; padding: clamp(24px, 4vw, 48px) clamp(16px, 3vw, 32px); }
+  .pai-success.show { display: grid; gap: var(--pai-space-md); justify-items: center; animation: pai-rise .5s var(--pai-ease-out) both; }
+  .pai-success__icon { width: 72px; height: 72px; border-radius: 50%; background: var(--pai-success-tint); color: var(--pai-success); display: grid; place-items: center; }
+  .pai-success__icon svg { width: 34px; height: 34px; }
+  .pai-form-error { display: none; }
+  .pai-form-error.show { display: grid; }
+
+  /* Sticky mobile CTA */
+  .pai-mobile-cta { display: none; position: fixed; left: 0; right: 0; bottom: 0; z-index: var(--pai-z-overlay); padding: 12px 16px calc(12px + env(safe-area-inset-bottom)); background: rgba(255,255,255,.92); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-top: 1px solid var(--pai-gray-100); transform: translateY(110%); transition: transform var(--pai-dur-slow) var(--pai-ease-standard); }
+  .pai-mobile-cta.show { transform: translateY(0); }
+  .pai-mobile-cta .pai-btn { width: 100%; }
+
+  /* ============ Responsive ============ */
+  @media (max-width: 989px) {
+    .pai-hero__inner, .pai-two, .pai-two.rev, .pai-product-hero, .pai-register, .pai-cta-band { grid-template-columns: 1fr; }
+    .pai-grid.three, .pai-grid.four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .pai-nav { display: none; }
+    .pai-register__aside { position: static; }
+    .pai-footer__grid { grid-template-columns: 1fr 1fr; }
+    .pai-hero { padding-top: 48px; }
+  }
+  @media (max-width: 749px) {
+    .pai-container { width: min(100% - 32px, var(--pai-container)); }
+    .pai-section { padding: var(--pai-space-3xl) 0; }
+    .pai-grid.two, .pai-grid.three, .pai-grid.four, .pai-form-row, .pai-tiles { grid-template-columns: 1fr; }
+    .pai-footer__grid { grid-template-columns: 1fr; }
+    .pai-topbar__date, .pai-topbar .pai-btn { display: none; }
+    .pai-mobile-cta { display: block; }
+    body { padding-bottom: 0; }
+    .pai-toast-zone { right: 16px; bottom: 90px; }
+    .pai-cta-band { padding: 28px 22px; }
+    .pai-card--feature { padding: var(--pai-space-lg); }
+    .pai-floating-badge { right: 12px; top: 12px; }
+    .pai-bubble { max-width: 100%; }
+    .pai-hero__panel { padding: var(--pai-space-md); }
+  }
+  /* ============ Custom cursor (AI / SaaS) — identique sur tout le site ============ */
+  .pai-cursor-ring { position: fixed; top: 0; left: 0; pointer-events: none; z-index: 2000; display: none; width: 52px; height: 52px; border-radius: 50%; border: 1.5px solid rgba(0,104,255,.7); background: rgba(0,104,255,.12); backdrop-filter: blur(2px); -webkit-backdrop-filter: blur(2px); box-shadow: 0 0 0 1px rgba(255,255,255,.6), 0 8px 24px rgba(0,104,255,.18); transition: opacity .2s, width .2s var(--pai-ease-out), height .2s var(--pai-ease-out); }
+  .pai-cursor-ring .pai-mark { position: absolute; inset: 0; margin: auto; width: 18px; color: var(--pai-primary); filter: drop-shadow(0 0 4px rgba(255,255,255,.95)) drop-shadow(0 0 8px rgba(0,104,255,.45)); animation: pai-cursor-spin var(--spin, 4s) linear infinite, pai-cursor-breathe 1.6s var(--pai-ease-standard) infinite, pai-cursor-hue 5s linear infinite; transform-origin: center; will-change: transform; }
+  .pai-cursor-ring::before { content: ""; position: absolute; inset: -1px; border-radius: 50%; border: 1.5px solid transparent; border-top-color: rgba(0,104,255,.9); border-right-color: rgba(122,63,242,.6); animation: pai-cursor-spin 2.4s linear infinite; animation-direction: reverse; }
+  .pai-cursor-ring::after { content: ""; position: absolute; inset: 0; border-radius: 50%; border: 1px solid rgba(0,104,255,.5); animation: pai-cursor-ripple 2s var(--pai-ease-out) infinite; }
+  .pai-cursor-ring .orbit { position: absolute; inset: 0; animation: pai-cursor-spin 3s linear infinite; }
+  .pai-cursor-ring .orbit i { position: absolute; top: -3px; left: 50%; width: 6px; height: 6px; margin-left: -3px; border-radius: 50%; background: var(--pai-accent-purple); box-shadow: 0 0 8px rgba(122,63,242,.8); }
+  @keyframes pai-cursor-spin { to { transform: rotate(360deg); } }
+  @keyframes pai-cursor-breathe { 0%, 100% { scale: 1; } 50% { scale: 1.28; } }
+  @keyframes pai-cursor-hue { 0%, 100% { color: var(--pai-primary); } 50% { color: var(--pai-accent-purple); } }
+  @keyframes pai-cursor-ripple { 0% { transform: scale(1); opacity: .7; } 100% { transform: scale(1.7); opacity: 0; } }
+  body.cur-down .pai-cursor-ring .pai-mark { animation-duration: .6s, .4s, 5s; }
+  body.cur-down .pai-cursor-ring { width: 44px; height: 44px; background: rgba(0,104,255,.22); }
+  body.cur-hidden .pai-cursor-ring { opacity: 0; }
+  @media (hover: hover) and (pointer: fine) {
+    body.has-cursor, body.has-cursor a, body.has-cursor button, body.has-cursor label, body.has-cursor input, body.has-cursor select, body.has-cursor .pai-choice { cursor: none; }
+    body.has-cursor .pai-cursor-ring { display: block; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+    [data-reveal], .pai-stagger > * { opacity: 1 !important; transform: none !important; }
+    body.has-cursor { cursor: auto; }
+    body.has-cursor a, body.has-cursor button, body.has-cursor label, body.has-cursor input, body.has-cursor select { cursor: pointer; }
+    .pai-cursor, .pai-cursor-ring, .pai-cursor-halo { display: none !important; }
+  }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="pai-mark-shape" viewBox="0 0 133 144.43">
+    <polygon class="pai-mark-fill" points="91.43 49.29 71.81 63.04 73.83 39.22 59.17 39.22 61.18 63.04 41.57 49.29 34.05 61.95 55.68 72.21 34.05 82.29 41.57 94.94 61.18 81.19 59.17 105.21 73.83 105.21 71.81 81.19 91.43 94.94 98.95 82.29 76.94 72.21 98.95 61.95 91.43 49.29"></polygon>
+    <rect class="pai-mark-fill" height="14.48" width="12.28" x="60.36" y="118.29"></rect>
+    <rect class="pai-mark-fill" height="14.48" width="12.28" x="60.36" y="11.65"></rect>
+    <rect class="pai-mark-fill" height="14.48" transform="translate(-29.53 40.58) rotate(-60.23)" width="12.28" x="14.07" y="38.5"></rect>
+    <rect class="pai-mark-fill" height="14.48" transform="translate(-28.87 147.6) rotate(-60.23)" width="12.28" x="106.65" y="91.44"></rect>
+    <rect class="pai-mark-fill" height="12.28" transform="translate(-45.74 22.53) rotate(-29.41)" width="14.48" x="12.81" y="92.26"></rect>
+  </symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 5 5L20 7"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-video" viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="3"/><path d="m16 10 5-3v10l-5-3"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-in" viewBox="0 0 24 24"><path d="M6.5 9.5v8M6.5 6.5v.01M11 17.5v-8M11 12.5c0-1.7 1.3-3 3-3s3 1.3 3 3v5"/></symbol>
+</svg>
+
+<!-- ============ TOPBAR ============ -->
+<header class="pai-topbar" id="topbar">
+  <div class="pai-container pai-topbar__inner">
+    <a class="pai-logo" href="#top" aria-label="Puissance AI">
+      <svg class="pai-mark pai-logo__mark" aria-hidden="true"><use href="#pai-mark-shape"></use></svg>
+      <span class="pai-wordmark">Puissance<sup>AI</sup></span>
+    </a>
+    <nav class="pai-nav" aria-label="Navigation principale">
+      <a href="#enjeu">L'enjeu</a>
+      <a href="#programme">Programme</a>
+      <a href="#intervenants">Intervenants</a>
+      <a href="#ai-protect">AI Protect</a>
+    </nav>
+    <div class="pai-row">
+      <span class="pai-pill pai-pill--blue pai-topbar__date"><span class="pai-status-dot live" style="color:var(--pai-success)"></span> Lun. 5 oct. 2026 · 8h30–10h</span>
+      <a class="pai-btn pai-btn--blue" href="#inscription">Je m'inscris <span class="arrow">→</span></a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="pai-hero">
+  <div class="pai-container pai-hero__inner">
+    <div class="pai-hero__copy">
+      <div class="pai-row">
+        <span class="pai-eyebrow"><svg class="pai-mark" aria-hidden="true"><use href="#pai-mark-shape"></use></svg> Save the date · Webinaire AI Protect</span>
+      </div>
+      <h1 class="pai-display">IA en entreprise : reprendre le <em>contrôle</em> sans freiner les usages</h1>
+      <p class="pai-lead lg">Un webinaire pour poser un cadre sur vos usages et votre responsabilité de dirigeant (charte IA).</p>
+      <div class="pai-hero__meta">
+        <span><svg class="pai-icon-outline" aria-hidden="true"><use href="#i-cal"></use></svg> Lundi 5 octobre 2026</span>
+        <span><svg class="pai-icon-outline" aria-hidden="true"><use href="#i-clock"></use></svg> 8h30 – 10h</span>
+        <span><svg class="pai-icon-outline" aria-hidden="true"><use href="#i-video"></use></svg> En ligne · Inscription obligatoire</span>
+      </div>
+      <div class="pai-row">
+        <a class="pai-btn pai-btn--blue pai-btn--lg" href="#inscription">Je m'inscris au webinaire <span class="arrow">→</span></a>
+        <a class="pai-btn pai-btn--secondary pai-btn--lg" href="#programme">Voir le programme</a>
+      </div>
+    </div>
+
+    <div class="pai-hero__panel">
+      <span class="pai-floating-badge"><svg class="pai-mark pai-pulse" style="width:14px" aria-hidden="true"><use href="#pai-mark-shape"></use></svg> GRATUIT · 1H30</span>
+      <div class="pai-hero__mock">
+        <div class="pai-event-card">
+          <div class="pai-event-card__date">
+            <div class="pai-event-card__day"><strong>05</strong><small>Oct.</small></div>
+            <div>
+              <span class="pai-caption">Webinaire en direct</span>
+              <h3>AI Act, charte IA : ce que votre entreprise doit réellement mettre en place</h3>
+            </div>
+          </div>
+          <div class="pai-countdown" id="countdown" aria-label="Compte à rebours avant le webinaire">
+            <div><strong data-cd="d">—</strong><span>jours</span></div>
+            <div><strong data-cd="h">—</strong><span>heures</span></div>
+            <div><strong data-cd="m">—</strong><span>min</span></div>
+            <div><strong data-cd="s">—</strong><span>sec</span></div>
+          </div>
+          <div class="pai-event-card__list">
+            <span><svg class="pai-icon-outline" aria-hidden="true"><use href="#i-check"></use></svg> Des situations réelles, pas un cas théorique</span>
+            <span><svg class="pai-icon-outline" aria-hidden="true"><use href="#i-check"></use></svg> Un regard opérationnel + un regard juridique</span>
+            <span><svg class="pai-icon-outline" aria-hidden="true"><use href="#i-check"></use></svg> Vos questions posées en direct</span>
+          </div>
+        </div>
+        <div class="pai-partners">
+          <span class="pai-logo"><svg class="pai-mark pai-logo__mark" aria-hidden="true"><use href="#pai-mark-shape"></use></svg><span class="pai-wordmark" style="font-size:19px">Puissance<sup>AI</sup></span></span>
+          <span class="x">×</span>
+          <span class="sparlann">Sparlann<small>Cabinet d'avocats</small></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VOS COLLABORATEURS UTILISENT L'IA ============ -->
+<section class="pai-section" id="enjeu">
+  <div class="pai-container">
+    <div class="pai-two">
+      <div class="pai-prose" data-reveal>
+        <span class="pai-eyebrow">Le constat</span>
+        <h2 class="pai-h2">Vos collaborateurs utilisent l'IA.</h2>
+        <p>Avez-vous déjà surpris un collaborateur en train d'utiliser ChatGPT ? Ou Claude ? Alors que des outils souverains sont disponibles dans l'entreprise.</p>
+        <div class="pai-usecases">
+          <span>Pour rédiger un email</span>
+          <span>Analyser un document</span>
+          <span>Préparer une présentation</span>
+          <span>Répondre à un client</span>
+          <span>Ou simplement gagner quelques minutes sur une tâche répétitive</span>
+        </div>
+        <p>Peut-être que vous avez découvert l'usage après coup.<br>Peut-être même que vous ne savez pas encore précisément ce que vos équipes font avec l'IA.</p>
+        <p class="big">Et pourtant, le sujet n'est plus seulement technologique. Il est désormais réglementaire.</p>
+      </div>
+      <div class="pai-stack-lg">
+        <div class="pai-stack pai-stagger" data-reveal>
+          <div class="pai-card pai-card--hue pai-date-card">
+            <span class="pai-caption">Depuis le 2 février 2025</span>
+            <strong>Le cadre européen vous impose d'agir.</strong>
+            <p class="pai-copy">L'article 4 de l'AI Act impose aux fournisseurs et déployeurs de systèmes d'IA de prendre des mesures adaptées pour soutenir la culture IA des salariés.</p>
+          </div>
+          <div class="pai-card pai-card--hue pai-date-card" style="background:var(--pai-accent-coral-tint)">
+            <span class="pai-caption" style="color:var(--pai-accent-coral-on)">Depuis le 2 août 2026</span>
+            <strong>De nouvelles obligations sont entrées en application.</strong>
+          </div>
+        </div>
+        <div class="pai-card pai-card--dark pai-card--feature" data-reveal style="--d:120ms">
+          <span class="pai-caption">Alors, concrètement :</span>
+          <h3 class="pai-h3" style="margin-top:8px">Qu'avez-vous mis en place dans votre entreprise ?</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ L'AI ACT CONCERNE DÉJÀ VOTRE ENTREPRISE ============ -->
+<section class="pai-section pai-section--subtle">
+  <div class="pai-container">
+    <div class="pai-two rev">
+      <div class="pai-stack-lg" data-reveal>
+        <div class="pai-card pai-card--feature pai-card--flat" style="background:var(--pai-gray-50);border-color:var(--pai-gray-200)">
+          <span class="pai-caption" style="margin-bottom:14px;display:block">Prenons une situation très simple</span>
+          <div class="pai-chat">
+            <div class="pai-bubble them"><span class="who">Un salarié</span>« Je peux mettre ce document dans ChatGPT ? »</div>
+            <div class="pai-bubble you typing" aria-label="Vous, en train de répondre…"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+          </div>
+          <p class="pai-copy strong" style="margin-top:18px;font-size:18px">Vous lui répondez quoi ?</p>
+        </div>
+        <div class="pai-card pai-card--flat">
+          <p class="pai-copy" style="margin-bottom:14px">Et si le document contient…</p>
+          <div class="pai-data-list">
+            <span><i>!</i> Des informations client ?</span>
+            <span><i>!</i> Des données personnelles ?</span>
+            <span><i>!</i> Une information confidentielle ?</span>
+            <span><i>!</i> Un élément stratégique ?</span>
+            <span><i>!</i> Une création appartenant à un tiers ?</span>
+          </div>
+        </div>
+      </div>
+      <div class="pai-prose" data-reveal style="--d:100ms">
+        <span class="pai-eyebrow">Réglementation</span>
+        <h2 class="pai-h2">L'AI Act concerne déjà votre entreprise.</h2>
+        <p class="big">Mais vos collaborateurs savent-ils réellement ce qu'ils peuvent faire avec l'IA ?</p>
+        <p class="q">Qui décide de ce qui peut être envoyé à une IA ?<br>Et surtout : vos collaborateurs connaissent-ils la réponse ?</p>
+        <div class="pai-alert info">
+          <svg class="pai-mark" aria-hidden="true"><use href="#pai-mark-shape"></use></svg>
+          <div><strong>Recommandation CNIL</strong><p>La CNIL recommande justement aux organismes d'encadrer l'utilisation des IA génératives par des politiques ou chartes internes précisant les usages autorisés et interdits, notamment concernant les données personnelles et confidentielles.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LE PROBLÈME ============ -->
+<section class="pai-section">
+  <div class="pai-container">
+    <div class="pai-section__head" data-reveal>
+      <span class="pai-eyebrow">Le problème</span>
+      <h2 class="pai-h2">Le problème : l'IA est déjà utilisée.</h2>
+      <p class="pai-lead">Pendant que vous réfléchissez encore à votre politique IA :</p>
+    </div>
+    <div class="pai-grid three pai-stagger" data-reveal>
+      <article class="pai-card pai-situation"><div class="pai-card__icon coral"><svg class="pai-icon-outline" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.7-4 14.3-4 16 0"/><path d="M17 3l4 4m0-4-4 4"/></svg></div><p>Un collaborateur utilise son compte personnel et le cache.</p></article>
+      <article class="pai-card pai-situation"><div class="pai-card__icon purple"><svg class="pai-icon-outline" aria-hidden="true"><path d="M12 3l2.5 6 6.5.5-5 4.2 1.6 6.3L12 16.8 6.4 20l1.6-6.3-5-4.2 6.5-.5z"/></svg></div><p>Un autre teste une nouvelle IA trouvée sur LinkedIn.</p></article>
+      <article class="pai-card pai-situation"><div class="pai-card__icon"><svg class="pai-icon-outline" aria-hidden="true"><circle cx="8" cy="9" r="3"/><circle cx="16" cy="9" r="3"/><path d="M2 20c1-4 11-4 12 0M12 20c1-4 9-4 10 0"/></svg></div><p>Une équipe commence à utiliser un outil sans en parler à la direction.</p></article>
+      <article class="pai-card pai-situation"><div class="pai-card__icon"><svg class="pai-icon-outline" aria-hidden="true"><path d="M4 19V9l4-4h8l4 4v10z"/><path d="M9 13h6M12 10v6"/></svg></div><p>Un manager veut intégrer l'IA dans ses méthodes de travail.</p></article>
+      <article class="pai-card pai-situation"><div class="pai-card__icon coral"><svg class="pai-icon-outline" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/><path d="M10 14h5M10 17h5"/><path d="M12 11.5v.01"/></svg></div><p>Un salarié ne sait pas s'il peut transmettre un document.</p></article>
+      <article class="pai-card pai-situation"><div class="pai-card__icon purple"><svg class="pai-icon-outline" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .8-1 1.5V14"/><path d="M12 17v.01"/></svg></div><p>Personne ne sait vraiment qui doit valider un nouvel usage.</p></article>
+    </div>
+    <div class="pai-two" style="margin-top:var(--pai-space-2xl);align-items:center">
+      <div class="pai-prose" data-reveal>
+        <p class="big">Ce n'est pas de la science-fiction.</p>
+        <p>Ce sont des situations qui se produisent déjà dans votre entreprise.</p>
+      </div>
+      <div class="pai-flip" data-reveal style="--d:120ms">
+        <span class="pai-caption" style="color:rgba(255,255,255,.55)">La vraie question n'est donc plus</span>
+        <span class="old">« Est-ce qu'on va utiliser l'IA ? »</span>
+        <span class="pai-caption" style="color:rgba(255,255,255,.55)">Mais</span>
+        <span class="new">« Comment <em>encadre-t-on</em> les usages de l'IA dans notre entreprise ? »</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ UNE CHARTE IA NE SE RÉSUME PAS… ============ -->
+<section class="pai-section pai-section--subtle">
+  <div class="pai-container">
+    <div class="pai-section__head" data-reveal>
+      <span class="pai-eyebrow">Gouvernance</span>
+      <h2 class="pai-h2">Une charte IA ne se résume pas à un document à faire signer.</h2>
+    </div>
+    <div class="pai-grid two">
+      <div class="pai-card pai-card--feature pai-card--flat" data-reveal>
+        <span class="pai-caption">Vous pourriez faire simple.</span>
+        <div class="pai-steps" style="margin-top:14px">
+          <div class="pai-step done"><i>1</i> Rédiger une charte.</div>
+          <div class="pai-step done"><i>2</i> La faire valider.</div>
+          <div class="pai-step done"><i>3</i> L'envoyer aux collaborateurs.</div>
+          <div class="pai-step done"><i>4</i> Demander une signature.</div>
+          <div class="pai-step" style="color:var(--pai-dark)"><i style="background:var(--pai-hue);color:var(--pai-primary-text)">✓</i> Puis passer à autre chose.</div>
+        </div>
+        <p class="pai-copy strong" style="margin-top:20px;font-size:18px">Mais que se passe-t-il ensuite ?</p>
+      </div>
+      <div class="pai-stack-lg" data-reveal style="--d:120ms">
+        <div class="pai-then">
+          <span>Un nouvel outil apparaît.</span>
+          <span>Un collaborateur a un doute.</span>
+          <span>Une équipe veut tester un nouvel usage.</span>
+          <span>Quelqu'un utilise son compte personnel.</span>
+          <span>Une information confidentielle est transmise par erreur.</span>
+        </div>
+        <div class="pai-questions">
+          <span>Qui décide </span><span>Qui répond </span><span>Que doit faire le collaborateur </span>
+        </div>
+        <p class="pai-copy">Et comment faire évoluer le cadre lorsque les usages de l'IA évoluent ?</p>
+        <p class="pai-lead" style="font-weight:800;color:var(--pai-dark);font-size:clamp(20px,2.4vw,26px);letter-spacing:-.02em;line-height:1.25">C'est là que le sujet devient un sujet de gouvernance.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA BAND ============ -->
+<section class="pai-section" style="padding-bottom:0">
+  <div class="pai-container">
+    <div class="pai-cta-band" data-reveal>
+      <svg class="pai-mark bg" aria-hidden="true"><use href="#pai-mark-shape"></use></svg>
+      <div class="pai-stack">
+        <span class="pai-pill pai-pill--ghost"><svg class="pai-mark" style="width:14px" aria-hidden="true"><use href="#pai-mark-shape"></use></svg> Webinaire AI Protect</span>
+        <h2 class="pai-h1" style="color:white">AI Act, charte IA : qu'est-ce que votre entreprise doit réellement mettre en place ?</h2>
+        <p class="pai-copy" style="font-size:18px">Vous utilisez déjà l'IA dans votre entreprise ?<br>Venez faire le point sur les questions que tout dirigeant doit désormais se poser.</p>
+        <div class="pai-row" style="margin-top:8px">
+          <a class="pai-btn pai-btn--blue pai-btn--lg" href="#inscription">Je m'inscris au webinaire <span class="arrow">→</span></a>
+        </div>
+      </div>
+      <div class="pai-cta-band__side">
+        <span class="pai-caption" style="color:rgba(255,255,255,.55)">Rendez-vous</span>
+        <strong>Le lundi 5 octobre 2026<br>de 8h30 à 10h</strong>
+        <span class="pai-mini">En ligne · Gratuit</span>
+        <span class="pai-pill pai-pill--coral" style="justify-self:start;margin-top:6px">Inscription obligatoire</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROGRAMME ============ -->
+<section class="pai-section" id="programme">
+  <div class="pai-container">
+    <div class="pai-section__head" data-reveal>
+      <span class="pai-eyebrow">Le programme</span>
+      <h2 class="pai-h2">Pendant 1 heure, nous partirons de vos situations réelles.</h2>
+      <div class="pai-row" style="margin-top:6px">
+        <span class="pai-pill pai-pill--outline pai-pill--strike">Pas d'un cas théorique</span>
+        <span class="pai-pill pai-pill--outline pai-pill--strike">Pas d'un catalogue d'outils</span>
+        <span class="pai-pill pai-pill--outline pai-pill--strike">Pas d'un modèle de charte à télécharger</span>
+      </div>
+      <p class="pai-lead">Mais des situations que vous pouvez déjà rencontrer dans votre entreprise.</p>
+    </div>
+
+    <div class="pai-accordion" id="accordion" data-reveal>
+      <div class="pai-acc-item open">
+        <h3 style="margin:0"><button class="pai-acc-trigger" aria-expanded="true" aria-controls="acc1"><span class="num">01</span><span class="txt">« Mon salarié utilise ChatGPT avec son compte personnel. »</span><span class="chev"><svg class="pai-icon-outline" aria-hidden="true"><use href="#i-chev"></use></svg></span></button></h3>
+        <div class="pai-acc-panel" id="acc1"><div><ul><li>Que faire des comptes personnels ?</li><li>Et que faire des nouveaux outils qui apparaissent en permanence ?</li></ul></div></div>
+      </div>
+      <div class="pai-acc-item">
+        <h3 style="margin:0"><button class="pai-acc-trigger" aria-expanded="false" aria-controls="acc2"><span class="num">02</span><span class="txt">« Mon collaborateur veut utiliser l'IA avec un document client. »</span><span class="chev"><svg class="pai-icon-outline" aria-hidden="true"><use href="#i-chev"></use></svg></span></button></h3>
+        <div class="pai-acc-panel" id="acc2"><div><ul><li>Quelles données peuvent être transmises ?</li><li>Lesquelles doivent être protégées ?</li><li>Où placer la limite ?</li></ul></div></div>
+      </div>
+      <div class="pai-acc-item">
+        <h3 style="margin:0"><button class="pai-acc-trigger" aria-expanded="false" aria-controls="acc3"><span class="num">03</span><span class="txt">« Une équipe veut tester une nouvelle IA. »</span><span class="chev"><svg class="pai-icon-outline" aria-hidden="true"><use href="#i-chev"></use></svg></span></button></h3>
+        <div class="pai-acc-panel" id="acc3"><div><ul><li>Qui décide ?</li><li>Qui valide ?</li><li>Quels critères prendre en compte ?</li><li>Et comment éviter que chaque service fasse ses propres choix ?</li></ul></div></div>
+      </div>
+      <div class="pai-acc-item">
+        <h3 style="margin:0"><button class="pai-acc-trigger" aria-expanded="false" aria-controls="acc4"><span class="num">04</span><span class="txt">« Un salarié a un doute. »</span><span class="chev"><svg class="pai-icon-outline" aria-hidden="true"><use href="#i-chev"></use></svg></span></button></h3>
+        <div class="pai-acc-panel" id="acc4"><div><ul><li>À qui doit-il poser la question ?</li><li>Et que doit-il faire lorsqu'un usage n'a pas encore été prévu par la charte ?</li></ul></div></div>
+      </div>
+      <div class="pai-acc-item">
+        <h3 style="margin:0"><button class="pai-acc-trigger" aria-expanded="false" aria-controls="acc5"><span class="num">05</span><span class="txt">« Une erreur vient de se produire. »</span><span class="chev"><svg class="pai-icon-outline" aria-hidden="true"><use href="#i-chev"></use></svg></span></button></h3>
+        <div class="pai-acc-panel" id="acc5"><div><ul><li>Une information confidentielle a peut-être été transmise.</li><li>Qui doit être prévenu ?</li><li>Que faut-il faire ?</li><li>Comment réagir ?</li></ul></div></div>
+      </div>
+      <div class="pai-acc-item">
+        <h3 style="margin:0"><button class="pai-acc-trigger" aria-expanded="false" aria-controls="acc6"><span class="num">06</span><span class="txt">« Nous avons une charte. Tout le monde l'a signée. »</span><span class="chev"><svg class="pai-icon-outline" aria-hidden="true"><use href="#i-chev"></use></svg></span></button></h3>
+        <div class="pai-acc-panel" id="acc6"><div><ul><li>Mais est-elle comprise ?</li><li>Est-elle réellement appliquée ?</li><li>Et que se passe-t-il lorsqu'un nouvel usage apparaît ?</li></ul></div></div>
+      </div>
+    </div>
+
+    <div class="pai-row-between" style="margin-top:var(--pai-space-2xl)" data-reveal>
+      <p class="pai-lead" style="font-weight:800;color:var(--pai-dark);font-size:clamp(20px,2.4vw,26px);letter-spacing:-.02em">Ces questions, nous les poserons en direct.</p>
+      <a class="pai-btn pai-btn--dark pai-btn--lg" href="#inscription">Je m'inscris au webinaire <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INTERVENANTS ============ -->
+<section class="pai-section pai-section--subtle" id="intervenants">
+  <div class="pai-container">
+    <div class="pai-section__head center" data-reveal>
+      <span class="pai-eyebrow">Les intervenants</span>
+      <h2 class="pai-h2">Deux expertises. Un même enjeu.</h2>
+    </div>
+
+    <div class="pai-grid three pai-stagger" data-reveal>
+      <!-- TODO : confirmer le titre d'Eric Blondeau -->
+      <article class="pai-card pai-speaker">
+        <div class="pai-speaker__photo">
+          <span class="pai-speaker__initials" aria-hidden="true">EB</span>
+          <img src="assets/eric.jpg" alt="Eric Blondeau" class="zoom" loading="lazy" onerror="this.remove()">
+          <span class="pai-pill pai-pill--blue">Animateur</span>
+        </div>
+        <div class="pai-speaker__body">
+          <h3>Eric Blondeau</h3>
+          <span class="pai-speaker__role">Animateur du webinaire</span>
+          <span class="pai-speaker__org">Puissance AI</span>
+          <div class="pai-speaker__links"><a href="https://www.linkedin.com/in/blondeau-eric/" target="_blank" rel="noopener"><svg class="pai-icon-outline" aria-hidden="true"><use href="#i-in"></use></svg> Profil LinkedIn</a></div>
+        </div>
+      </article>
+      <article class="pai-card pai-speaker">
+        <div class="pai-speaker__photo">
+          <span class="pai-speaker__initials" aria-hidden="true">LM</span>
+          <img src="assets/laetitia.jpg" alt="Laëtitia Le Metayer" loading="lazy" onerror="this.remove()">
+          <span class="pai-pill pai-pill--purple">Avocate</span>
+        </div>
+        <div class="pai-speaker__body">
+          <h3>Laëtitia Le Metayer</h3>
+          <span class="pai-speaker__role">Avocate — droit du numérique, données personnelles (RGPD) et propriété intellectuelle</span>
+          <span class="pai-speaker__org">Sparlann, cabinet d'avocats · Rennes</span>
+          <div class="pai-speaker__links"><a href="https://www.linkedin.com/in/la%C3%ABtitia-le-metayer/" target="_blank" rel="noopener"><svg class="pai-icon-outline" aria-hidden="true"><use href="#i-in"></use></svg> Profil LinkedIn</a></div>
+        </div>
+      </article>
+      <article class="pai-card pai-speaker">
+        <div class="pai-speaker__photo">
+          <span class="pai-speaker__initials" aria-hidden="true">SB</span>
+          <img src="assets/salah.jpg" alt="Salah-Eddine Benzakour" loading="lazy" onerror="this.remove()">
+          <span class="pai-pill pai-pill--coral">Invité</span>
+        </div>
+        <div class="pai-speaker__body">
+          <h3>Salah-Eddine Benzakour</h3>
+          <span class="pai-speaker__role">Fondateur & CEO — accompagne les dirigeants de PME/PMI/ETI dans leur transformation IA</span>
+          <span class="pai-speaker__org">Puissance AI</span>
+          <div class="pai-speaker__links"><a href="https://www.linkedin.com/in/salahbenzakour/" target="_blank" rel="noopener"><svg class="pai-icon-outline" aria-hidden="true"><use href="#i-in"></use></svg> Profil LinkedIn</a></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="pai-grid two pai-stagger" style="margin-top:var(--pai-space-lg)" data-reveal>
+      <div class="pai-card pai-card--feature pai-org">
+        <span class="pai-logo"><svg class="pai-mark pai-logo__mark" aria-hidden="true"><use href="#pai-mark-shape"></use></svg><span class="pai-wordmark">Puissance<sup>AI</sup></span></span>
+        <p class="pai-copy">Nous accompagnons les dirigeants et leurs équipes dans leur transformation IA.</p>
+        <p class="pai-copy">Notre approche part de la réalité de l'entreprise : ses objectifs, ses usages, ses équipes et ses risques.</p>
+        <span class="pai-pill pai-pill--blue" style="justify-self:start">Un regard opérationnel</span>
+      </div>
+      <div class="pai-card pai-card--feature pai-org">
+        <span class="pai-org__name">Sparlann<small>Cabinet d'avocats partenaire</small></span>
+        <p class="pai-copy">Notre cabinet d'avocats partenaire apportera son regard juridique sur les questions que soulève concrètement l'utilisation de l'IA dans l'entreprise.</p>
+        <span class="pai-pill pai-pill--purple" style="justify-self:start">Un regard juridique</span>
+      </div>
+    </div>
+
+    <div class="pai-stack" style="margin-top:var(--pai-space-2xl);justify-items:center;text-align:center" data-reveal>
+      <div class="pai-triple"><span>Un regard opérationnel.</span><span>Un regard juridique.</span><span>Des situations concrètes.</span></div>
+      <a class="pai-btn pai-btn--blue pai-btn--lg" href="#inscription" style="margin-top:8px">Je m'inscris au webinaire <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AI PROTECT ============ -->
+<section class="pai-section" id="ai-protect">
+  <div class="pai-container">
+    <div class="pai-product-hero">
+      <div class="pai-prose" data-reveal>
+        <span class="pai-eyebrow">L'offre</span>
+        <h2 class="pai-h2">AI Protect : poser le cadre avant que les usages ne vous échappent.</h2>
+        <p>AI Protect est l'offre Puissance AI dédiée à l'identification du niveau de risque de votre entreprise et à la mise en place d'une charte IA spécifique.</p>
+        <p class="big">L'objectif n'est pas de mettre l'IA sous cloche.</p>
+        <p>Il s'agit de permettre à vos équipes de savoir ce qu'elles peuvent faire, ce qu'elles ne peuvent pas faire, dans quelles conditions, et qui décide.</p>
+        <p class="q">Avec un cadre adapté à votre entreprise.</p>
+      </div>
+      <div class="pai-product-shot" data-reveal style="--d:120ms">
+        <div class="pai-row-between">
+          <span class="pai-product-logo"><span class="light">AI</span><span class="strong">Protect</span></span>
+          <svg class="pai-mark pai-pulse" style="width:36px;color:#7DB2FF" aria-hidden="true"><use href="#pai-mark-shape"></use></svg>
+        </div>
+        <p class="pai-mini">Vos équipes savent :</p>
+        <div class="pai-tiles">
+          <div class="pai-tile"><i class="ok">✓</i><strong>ce qu'elles peuvent faire,</strong></div>
+          <div class="pai-tile"><i class="no">×</i><strong>ce qu'elles ne peuvent pas faire,</strong></div>
+          <div class="pai-tile"><i class="cond">?</i><strong>dans quelles conditions,</strong></div>
+          <div class="pai-tile"><i class="who">→</i><strong>et qui décide.</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ URGENCE ============ -->
+<section class="pai-section pai-section--subtle">
+  <div class="pai-container">
+    <div class="pai-two" style="align-items:center">
+      <div class="pai-prose" data-reveal>
+        <span class="pai-eyebrow">Et maintenant ?</span>
+        <h2 class="pai-h2">Vous n'avez encore rien mis en place ?</h2>
+        <p class="big">C'est peut-être le bon moment pour commencer.</p>
+        <p>L'article 4 de l'AI Act est déjà applicable. Depuis le 2 février 2025, les fournisseurs et déployeurs concernés doivent prendre des mesures adaptées pour soutenir la culture IA des personnes qui utilisent ces systèmes pour leur compte.</p>
+        <p>Et la CNIL recommande d'encadrer les usages de l'IA générative par des politiques ou chartes internes.</p>
+      </div>
+      <div class="pai-card pai-card--dark pai-card--feature" data-reveal style="--d:120ms;padding:clamp(28px,4vw,44px)">
+        <p class="pai-copy" style="font-size:18px">La question n'est donc plus de savoir si l'IA va entrer dans votre entreprise.<br>Elle y est probablement déjà.</p>
+        <h3 class="pai-h2" style="color:white;margin-top:18px">La question est : <span style="color:#7DB2FF">avez-vous posé le cadre ?</span></h3>
+        <a class="pai-btn pai-btn--blue pai-btn--lg" href="#inscription" style="margin-top:24px">Je m'inscris au webinaire <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INSCRIPTION ============ -->
+<section class="pai-section" id="inscription">
+  <div class="pai-container">
+    <div class="pai-register">
+      <aside class="pai-register__aside" data-reveal>
+        <div>
+          <span class="pai-eyebrow">Inscription</span>
+          <h2 class="pai-h2" style="margin-top:10px">Réservez votre place au webinaire.</h2>
+          <p class="pai-lead" style="margin-top:12px">Gratuit, en ligne, inscription obligatoire. Vous recevrez le lien de connexion par email.</p>
+        </div>
+        <div class="pai-card pai-card--dark pai-card--flat">
+          <div class="pai-event-card__date" style="margin-bottom:18px">
+            <div class="pai-event-card__day" style="background:var(--pai-primary)"><strong>05</strong><small>Oct.</small></div>
+            <div>
+              <span class="pai-caption">Lundi 5 octobre 2026</span>
+              <h3 style="margin:0;font-size:20px;letter-spacing:-.02em">8h30 – 10h · En ligne</h3>
+            </div>
+          </div>
+          <ul>
+            <li><svg class="pai-icon-outline" aria-hidden="true"><use href="#i-check"></use></svg> 6 situations concrètes décryptées en direct</li>
+            <li><svg class="pai-icon-outline" aria-hidden="true"><use href="#i-check"></use></svg> Un regard opérationnel (Puissance AI) et juridique (Sparlann)</li>
+            <li><svg class="pai-icon-outline" aria-hidden="true"><use href="#i-check"></use></svg> Vos questions posées aux intervenants</li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="pai-card pai-card--feature pai-card--flat pai-register__form" data-reveal style="--d:120ms">
+        <form id="registrationForm" class="pai-form" novalidate>
+          <div class="pai-form__block" style="border-top:0;padding-top:0;margin-top:0">
+            <div class="pai-form__block-title"><span class="idx">1</span> Vos informations</div>
+            <div class="pai-form-row">
+              <label class="pai-field"><span class="pai-label">Prénom<span class="req">*</span></span><input class="pai-input" name="prenom" type="text" autocomplete="given-name" required placeholder="Camille"><span class="pai-helper err">Indiquez votre prénom.</span></label>
+              <label class="pai-field"><span class="pai-label">Nom<span class="req">*</span></span><input class="pai-input" name="nom" type="text" autocomplete="family-name" required placeholder="Durand"><span class="pai-helper err">Indiquez votre nom.</span></label>
+            </div>
+            <label class="pai-field"><span class="pai-label">Adresse email<span class="req">*</span></span><input class="pai-input" name="email" type="email" autocomplete="email" required placeholder="camille.durand@entreprise.fr"><span class="pai-helper err">Indiquez une adresse email valide.</span></label>
+            <label class="pai-field"><span class="pai-label">Nom de l'entreprise ou de l'organisation<span class="req">*</span></span><input class="pai-input" name="organisation" type="text" autocomplete="organization" required placeholder="Votre organisation"><span class="pai-helper err">Indiquez le nom de votre organisation.</span></label>
+            <div class="pai-form-row">
+              <label class="pai-field"><span class="pai-label">Type d'organisation<span class="req">*</span></span>
+                <select class="pai-select is-placeholder" name="type_organisation" required>
+                  <option value="" disabled selected>Sélectionner</option>
+                  <option>Entreprise privée</option>
+                  <option>Indépendant / profession libérale</option>
+                  <option>Administration / secteur public</option>
+                  <option>Association / fondation</option>
+                  <option>Enseignement / recherche</option>
+                  <option>Autre</option>
+                </select><span class="pai-helper err">Sélectionnez un type d'organisation.</span></label>
+              <label class="pai-field"><span class="pai-label">Taille de l'organisation<span class="req">*</span></span>
+                <select class="pai-select is-placeholder" name="taille_organisation" required>
+                  <option value="" disabled selected>Sélectionner</option>
+                  <option>1 personne</option>
+                  <option>2–9 personnes</option>
+                  <option>10–49 personnes</option>
+                  <option>50–249 personnes</option>
+                  <option>250–999 personnes</option>
+                  <option>1 000 personnes et plus</option>
+                </select><span class="pai-helper err">Sélectionnez une taille.</span></label>
+            </div>
+            <label class="pai-field"><span class="pai-label">Site internet<span class="opt">(facultatif)</span></span><input class="pai-input" name="site_web" type="url" inputmode="url" autocomplete="url" placeholder="https://www.votre-site.fr"><span class="pai-helper err">Indiquez une URL valide (https://…).</span></label>
+          </div>
+
+          <div class="pai-form__block">
+            <div class="pai-form__block-title"><span class="idx">2</span> Où en êtes-vous avec l'IA ?</div>
+            <fieldset class="pai-fieldset pai-field" data-group>
+              <legend>Avez-vous des projets IA déjà lancés ?<span class="req" style="color:var(--pai-primary)">*</span></legend>
+              <div class="pai-choice-group">
+                <label class="pai-choice"><input type="radio" name="projets_ia" value="Aucun" required><span>Aucun</span></label>
+                <label class="pai-choice"><input type="radio" name="projets_ia" value="En réflexion"><span>En réflexion</span></label>
+                <label class="pai-choice"><input type="radio" name="projets_ia" value="Oui, 1 ou 2 projets"><span>Oui, 1 ou 2 projets</span></label>
+                <label class="pai-choice"><input type="radio" name="projets_ia" value="Oui, plusieurs projets"><span>Oui, plusieurs projets</span></label>
+              </div>
+              <span class="pai-helper err">Choisissez une réponse.</span>
+            </fieldset>
+            <fieldset class="pai-fieldset pai-field" data-group>
+              <legend>Avez-vous un référent IA ?<span class="req" style="color:var(--pai-primary)">*</span></legend>
+              <div class="pai-choice-group">
+                <label class="pai-choice"><input type="radio" name="referent_ia" value="Oui" required><span>Oui</span></label>
+                <label class="pai-choice"><input type="radio" name="referent_ia" value="En cours de désignation"><span>En cours de désignation</span></label>
+                <label class="pai-choice"><input type="radio" name="referent_ia" value="Non"><span>Non</span></label>
+              </div>
+              <span class="pai-helper err">Choisissez une réponse.</span>
+            </fieldset>
+            <fieldset class="pai-fieldset pai-field" data-group>
+              <legend>Avez-vous un comité IA ?<span class="req" style="color:var(--pai-primary)">*</span></legend>
+              <div class="pai-choice-group">
+                <label class="pai-choice"><input type="radio" name="comite_ia" value="Oui" required><span>Oui</span></label>
+                <label class="pai-choice"><input type="radio" name="comite_ia" value="En cours de constitution"><span>En cours de constitution</span></label>
+                <label class="pai-choice"><input type="radio" name="comite_ia" value="Non"><span>Non</span></label>
+              </div>
+              <span class="pai-helper err">Choisissez une réponse.</span>
+            </fieldset>
+            <fieldset class="pai-fieldset pai-field" data-group>
+              <legend>Avez-vous une charte IA ?<span class="req" style="color:var(--pai-primary)">*</span></legend>
+              <div class="pai-choice-group">
+                <label class="pai-choice"><input type="radio" name="charte_ia" value="Oui, diffusée" required><span>Oui, diffusée</span></label>
+                <label class="pai-choice"><input type="radio" name="charte_ia" value="En cours de rédaction"><span>En cours de rédaction</span></label>
+                <label class="pai-choice"><input type="radio" name="charte_ia" value="Non"><span>Non</span></label>
+              </div>
+              <span class="pai-helper err">Choisissez une réponse.</span>
+            </fieldset>
+            <fieldset class="pai-fieldset pai-field" data-group>
+              <legend>Avez-vous un logiciel IA officiel pour tous vos collaborateurs ?<span class="req" style="color:var(--pai-primary)">*</span></legend>
+              <div class="pai-choice-group">
+                <label class="pai-choice"><input type="radio" name="logiciel_ia_officiel" value="Oui, pour tous" required><span>Oui, pour tous</span></label>
+                <label class="pai-choice"><input type="radio" name="logiciel_ia_officiel" value="Oui, pour une partie des collaborateurs"><span>Oui, pour une partie des collaborateurs</span></label>
+                <label class="pai-choice"><input type="radio" name="logiciel_ia_officiel" value="Non"><span>Non</span></label>
+              </div>
+              <span class="pai-helper err">Choisissez une réponse.</span>
+            </fieldset>
+          </div>
+
+          <div class="pai-form__block">
+            <div class="pai-form__block-title"><span class="idx">3</span> Validation</div>
+            <div class="pai-field" data-consent>
+              <label class="pai-checkrow"><input class="pai-checkbox" type="checkbox" name="consentement_rgpd" required><span>J'accepte que mes informations soient utilisées par Puissance AI pour traiter mon inscription au webinaire.<span class="req" style="color:var(--pai-primary)">*</span></span></label>
+              <span class="pai-helper err">Votre accord est nécessaire pour traiter l'inscription.</span>
+            </div>
+            <!-- honeypot anti-spam -->
+            <div class="hp" aria-hidden="true"><label>Ne pas remplir <input type="text" name="website_url" tabindex="-1" autocomplete="off"></label></div>
+            <div class="pai-alert danger pai-form-error" id="formError"><span>×</span><div><strong>L'envoi a échoué</strong><p>Merci de réessayer dans un instant.</p></div></div>
+            <div class="pai-submit-wrap">
+              <button class="pai-btn pai-btn--blue pai-btn--lg" type="submit" id="submitBtn"><span class="label">Je m'inscris au webinaire</span><svg class="pai-mark pai-spinner" style="display:none;width:18px" aria-hidden="true"><use href="#pai-mark-shape"></use></svg></button>
+              <span class="pai-mini">Gratuit · Places limitées · Le lien de connexion vous sera envoyé par email.</span>
+            </div>
+          </div>
+        </form>
+
+        <div class="pai-success" id="formSuccess" role="status" aria-live="polite">
+          <div class="pai-success__icon"><svg class="pai-icon-outline" aria-hidden="true"><use href="#i-check"></use></svg></div>
+          <h3 class="pai-h3">Inscription enregistrée !</h3>
+          <p class="pai-lead" style="text-align:center">Rendez-vous le <strong>lundi 5 octobre 2026 de 8h30 à 10h</strong>. Vous recevrez le lien de connexion par email avant le webinaire.</p>
+          <div class="pai-row" style="justify-content:center">
+            <button class="pai-btn pai-btn--dark" type="button" id="icsBtn"><svg class="pai-icon-outline" style="width:18px;height:18px" aria-hidden="true"><use href="#i-cal"></use></svg> Ajouter à mon agenda</button>
+            <a class="pai-btn pai-btn--secondary" href="https://www.linkedin.com/company/puissance-ai/" target="_blank" rel="noopener">Suivre Puissance AI</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="pai-footer">
+  <div class="pai-container">
+    <div class="pai-footer__grid">
+      <div class="pai-stack">
+        <span class="pai-logo pai-logo--dark"><svg class="pai-mark pai-logo__mark" aria-hidden="true"><use href="#pai-mark-shape"></use></svg><span class="pai-wordmark">Puissance<sup>AI</sup></span></span>
+        <p class="pai-copy" style="max-width:380px">Cabinet de formation et conseil en IA pour les dirigeants et leurs équipes. Acculturation, coordination, transformation.</p>
+        <p class="pai-mini">En partenariat avec <strong style="color:white">Sparlann</strong>, cabinet d'avocats — Rennes.</p>
+      </div>
+      <div class="pai-stack" style="gap:10px">
+        <span class="pai-caption" style="color:rgba(255,255,255,.5)">Contact</span>
+        <p class="pai-copy">5 rue Jean Montavont<br>68200 Mulhouse, France</p>
+        <a class="pai-copy" href="mailto:contact@puissance.ai">contact@puissance.ai</a>
+        <a class="pai-copy" href="tel:+33367260088">03 67 26 00 88</a>
+      </div>
+      <div class="pai-stack" style="gap:10px">
+        <span class="pai-caption" style="color:rgba(255,255,255,.5)">Webinaire</span>
+        <a class="pai-copy" href="#programme">Programme</a>
+        <a class="pai-copy" href="#intervenants">Intervenants</a>
+        <a class="pai-copy" href="#ai-protect">AI Protect</a>
+        <a class="pai-copy" href="#inscription">Inscription</a>
+      </div>
+    </div>
+    <div class="pai-footer__bottom">
+      <span>© 2026 Puissance AI. Tous droits réservés.</span>
+      <span class="pai-row" style="gap:18px">
+        <!-- TODO : renseigner les URLs -->
+        <a href="https://www.puissance.ai/" target="_blank" rel="noopener">Mentions légales</a>
+        <a href="https://www.puissance.ai/" target="_blank" rel="noopener">Politique de confidentialité</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<div class="pai-mobile-cta" id="mobileCta">
+  <a class="pai-btn pai-btn--blue pai-btn--lg" href="#inscription">Je m'inscris au webinaire <span class="arrow">→</span></a>
+</div>
+<div class="pai-toast-zone" id="toastZone" aria-live="polite"></div>
+<div class="pai-cursor-ring" id="cursorRing" aria-hidden="true"><span class="orbit"><i></i></span><svg class="pai-mark"><use href="#pai-mark-shape"></use></svg></div>
+<div class="pai-cursor-halo" id="cursorHalo" aria-hidden="true"></div>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ---------- Configuration ---------- */
+  // TODO Brevo : renseigner l'endpoint (webhook Make/Zapier, API Brevo via proxy, etc.).
+  // Tant que la valeur est null, l'envoi est simulé côté client.
+  const REGISTRATION_ENDPOINT = null;
+  const EVENT_START = new Date('2026-10-05T08:30:00+02:00');
+  const EVENT_END = new Date('2026-10-05T10:00:00+02:00');
+
+  /* ---------- Topbar shadow ---------- */
+  const topbar = document.getElementById('topbar');
+  const onScroll = () => topbar.classList.toggle('is-scrolled', window.scrollY > 12);
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  /* ---------- Scroll reveal ---------- */
+  const revealEls = document.querySelectorAll('[data-reveal]');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    revealEls.forEach((el) => io.observe(el));
+  } else {
+    revealEls.forEach((el) => el.classList.add('in'));
+  }
+
+  /* ---------- Countdown ---------- */
+  const cd = document.getElementById('countdown');
+  if (cd) {
+    const parts = { d: cd.querySelector('[data-cd="d"]'), h: cd.querySelector('[data-cd="h"]'), m: cd.querySelector('[data-cd="m"]'), s: cd.querySelector('[data-cd="s"]') };
+    const pad = (n) => String(n).padStart(2, '0');
+    const set = (el, v) => { if (el.textContent !== v) { el.textContent = v; el.classList.remove('tick'); void el.offsetWidth; el.classList.add('tick'); } };
+    const tick = () => {
+      const diff = EVENT_START - Date.now();
+      if (diff <= 0) {
+        set(parts.d, '0'); set(parts.h, '00'); set(parts.m, '00'); set(parts.s, '00');
+        cd.setAttribute('aria-label', Date.now() < EVENT_END ? 'Le webinaire est en cours' : 'Le webinaire est terminé');
+        return;
+      }
+      const s = Math.floor(diff / 1000);
+      set(parts.d, String(Math.floor(s / 86400)));
+      set(parts.h, pad(Math.floor((s % 86400) / 3600)));
+      set(parts.m, pad(Math.floor((s % 3600) / 60)));
+      set(parts.s, pad(s % 60));
+    };
+    tick();
+    setInterval(tick, 1000);
+  }
+
+  /* ---------- Accordion ---------- */
+  document.querySelectorAll('.pai-acc-trigger').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.pai-acc-item');
+      const open = item.classList.toggle('open');
+      btn.setAttribute('aria-expanded', String(open));
+    });
+  });
+
+  /* ---------- Sticky mobile CTA ---------- */
+  const mobileCta = document.getElementById('mobileCta');
+  const formSection = document.getElementById('inscription');
+  const hero = document.querySelector('.pai-hero');
+  if (mobileCta && 'IntersectionObserver' in window) {
+    let heroVisible = true, formVisible = false;
+    const update = () => mobileCta.classList.toggle('show', !heroVisible && !formVisible);
+    new IntersectionObserver(([e]) => { heroVisible = e.isIntersecting; update(); }, { threshold: 0.2 }).observe(hero);
+    new IntersectionObserver(([e]) => { formVisible = e.isIntersecting; update(); }, { threshold: 0.05 }).observe(formSection);
+  }
+
+  /* ---------- Toast ---------- */
+  const toastZone = document.getElementById('toastZone');
+  function toast(title, text) {
+    const el = document.createElement('div');
+    el.className = 'pai-toast';
+    el.innerHTML = '<svg class="pai-mark" aria-hidden="true"><use href="#pai-mark-shape"></use></svg><div><strong></strong><p class="pai-mini"></p></div>';
+    el.querySelector('strong').textContent = title;
+    el.querySelector('p').textContent = text;
+    toastZone.appendChild(el);
+    setTimeout(() => { el.style.opacity = '0'; el.style.transition = 'opacity .3s'; setTimeout(() => el.remove(), 320); }, 4200);
+  }
+
+  /* ---------- Form ---------- */
+  const form = document.getElementById('registrationForm');
+  const submitBtn = document.getElementById('submitBtn');
+  const formError = document.getElementById('formError');
+  const formSuccess = document.getElementById('formSuccess');
+
+  // selects : couleur placeholder tant que rien n'est choisi
+  form.querySelectorAll('.pai-select').forEach((sel) => {
+    sel.addEventListener('change', () => sel.classList.toggle('is-placeholder', !sel.value));
+  });
+
+  function fieldWrap(input) {
+    return input.closest('[data-group]') || input.closest('[data-consent]') || input.closest('.pai-field');
+  }
+  function setError(input, on) {
+    const wrap = fieldWrap(input);
+    if (wrap) wrap.classList.toggle('pai-field--error', on);
+  }
+  function validateInput(input) {
+    let ok = true;
+    if (input.type === 'radio') {
+      ok = !!form.querySelector(`input[name="${input.name}"]:checked`);
+    } else if (input.type === 'checkbox') {
+      ok = input.checked;
+    } else {
+      ok = input.checkValidity();
+    }
+    setError(input, !ok);
+    return ok;
+  }
+  // validation en direct après première interaction
+  form.querySelectorAll('input, select').forEach((input) => {
+    if (input.name === 'website_url') return;
+    const evt = (input.type === 'radio' || input.type === 'checkbox' || input.tagName === 'SELECT') ? 'change' : 'blur';
+    input.addEventListener(evt, () => { if (input.required || input.value) validateInput(input); });
+    input.addEventListener('input', () => { if (fieldWrap(input)?.classList.contains('pai-field--error')) validateInput(input); });
+  });
+
+  function validateForm() {
+    let firstBad = null;
+    const seenRadio = new Set();
+    form.querySelectorAll('input, select').forEach((input) => {
+      if (input.name === 'website_url') return;
+      if (input.type === 'radio') { if (seenRadio.has(input.name)) return; seenRadio.add(input.name); }
+      if (!input.required && !input.value) { setError(input, false); return; }
+      if (!validateInput(input) && !firstBad) firstBad = input;
+    });
+    if (firstBad) {
+      const wrap = fieldWrap(firstBad) || firstBad;
+      wrap.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      const focusable = firstBad.type === 'radio' ? form.querySelector(`input[name="${firstBad.name}"]`) : firstBad;
+      setTimeout(() => focusable.focus({ preventScroll: true }), 350);
+    }
+    return !firstBad;
+  }
+
+  function collectPayload() {
+    const fd = new FormData(form);
+    const payload = {};
+    ['prenom', 'nom', 'email', 'organisation', 'type_organisation', 'taille_organisation', 'site_web',
+     'projets_ia', 'referent_ia', 'comite_ia', 'charte_ia', 'logiciel_ia_officiel'].forEach((k) => {
+      payload[k] = (fd.get(k) || '').toString().trim();
+    });
+    payload.consentement_rgpd = fd.get('consentement_rgpd') === 'on';
+    payload.source = 'lp-webinaire-ai-protect';
+    payload.evenement = 'Webinaire AI Protect — 2026-10-05';
+    payload.submitted_at = new Date().toISOString();
+    return payload;
+  }
+
+  // Point d'accroche unique pour le CRM (Brevo) — à brancher plus tard.
+  async function submitRegistration(payload) {
+    if (!REGISTRATION_ENDPOINT) {
+      await new Promise((r) => setTimeout(r, 900)); // simulation
+      console.info('[AI Protect] Inscription simulée — payload :', payload);
+      return { ok: true };
+    }
+    const res = await fetch(REGISTRATION_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+    return { ok: res.ok };
+  }
+
+  function setLoading(on) {
+    submitBtn.disabled = on;
+    submitBtn.querySelector('.label').textContent = on ? 'Envoi en cours…' : "Je m'inscris au webinaire";
+    submitBtn.querySelector('.pai-spinner').style.display = on ? 'block' : 'none';
+  }
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    formError.classList.remove('show');
+    if (form.elements.website_url.value) return; // honeypot : bot
+    if (!validateForm()) return;
+    setLoading(true);
+    try {
+      const { ok } = await submitRegistration(collectPayload());
+      if (!ok) throw new Error('submit failed');
+      form.style.display = 'none';
+      formSuccess.classList.add('show');
+      formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      toast('Inscription confirmée', 'À très vite le 5 octobre à 8h30.');
+    } catch (err) {
+      console.error(err);
+      formError.classList.add('show');
+      formError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    } finally {
+      setLoading(false);
+    }
+  });
+
+  /* ---------- Custom cursor (identique partout) ---------- */
+  (function initCursor() {
+    const fine = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!fine || reduced) return;
+    const ring = document.getElementById('cursorRing');
+    const body = document.body;
+    body.classList.add('has-cursor', 'cur-hidden');
+    let mx = -100, my = -100, rx = -100, ry = -100, raf = null, speed = 0, lastX = 0, lastY = 0, lastT = 0;
+    const loop = () => {
+      rx += (mx - rx) * 0.35; ry += (my - ry) * 0.35;
+      ring.style.transform = `translate(${rx}px, ${ry}px) translate(-50%, -50%)`;
+      // la vitesse de la souris accélère la rotation de l'étoile (4s au repos → 0.5s à pleine vitesse)
+      speed *= 0.92;
+      ring.style.setProperty('--spin', (4 - Math.min(speed, 1) * 3.5).toFixed(2) + 's');
+      raf = requestAnimationFrame(loop);
+    };
+    document.addEventListener('mousemove', (e) => {
+      const now = performance.now(), dt = Math.max(now - lastT, 1);
+      const v = Math.hypot(e.clientX - lastX, e.clientY - lastY) / dt; // px/ms
+      speed = Math.min(1, speed + v * 0.6);
+      lastX = e.clientX; lastY = e.clientY; lastT = now;
+      mx = e.clientX; my = e.clientY;
+      body.classList.remove('cur-hidden');
+      if (!raf) loop();
+    }, { passive: true });
+    document.addEventListener('mouseleave', () => body.classList.add('cur-hidden'));
+    document.addEventListener('mouseenter', () => body.classList.remove('cur-hidden'));
+    document.addEventListener('mousedown', () => body.classList.add('cur-down'));
+    document.addEventListener('mouseup', () => body.classList.remove('cur-down'));
+  })();
+
+  /* ---------- .ics ---------- */
+  document.getElementById('icsBtn').addEventListener('click', () => {
+    const fmt = (d) => d.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
+    const ics = [
+      'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Puissance AI//Webinaire AI Protect//FR', 'CALSCALE:GREGORIAN', 'METHOD:PUBLISH',
+      'BEGIN:VEVENT',
+      'UID:webinaire-ai-protect-20261005@puissance.ai',
+      'DTSTAMP:' + fmt(new Date()),
+      'DTSTART:' + fmt(EVENT_START),
+      'DTEND:' + fmt(EVENT_END),
+      'SUMMARY:Webinaire AI Protect — IA en entreprise : reprendre le contrôle sans freiner les usages',
+      'DESCRIPTION:AI Act\\, charte IA : qu\'est-ce que votre entreprise doit réellement mettre en place ? Puissance AI × Sparlann. Le lien de connexion vous sera envoyé par email.',
+      'LOCATION:En ligne',
+      'URL:' + location.href.split('#')[0],
+      'END:VEVENT', 'END:VCALENDAR'
+    ].join('\r\n');
+    const blob = new Blob([ics], { type: 'text/calendar;charset=utf-8' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'webinaire-ai-protect-2026-10-05.ics';
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  });
+})();
+</script>
+</body>
+</html>

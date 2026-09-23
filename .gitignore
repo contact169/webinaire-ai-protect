@@ -1,0 +1,5 @@
+﻿.claude/
+.vercel/
+.netlify/
+Thumbs.db
+.DS_Store
