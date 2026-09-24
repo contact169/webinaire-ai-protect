@@ -413,9 +413,9 @@
   /* Speakers */
   .pai-speaker { padding: 0; overflow: hidden; display: grid; grid-template-rows: auto 1fr; }
   .pai-speaker__photo { aspect-ratio: 1 / 1; background: var(--pai-paper); border-bottom: 1px solid var(--pai-border); position: relative; overflow: hidden; }
-  .pai-speaker__photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; filter: grayscale(1) contrast(1.05); transition: filter .4s var(--pai-ease-out), transform .6s var(--pai-ease-out); }
+  .pai-speaker__photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; transition: transform .6s var(--pai-ease-out); }
   .pai-speaker__photo img.zoom { transform: scale(1.7); object-position: center 42%; }
-  .pai-speaker:hover .pai-speaker__photo img { filter: none; transform: scale(1.03); }
+  .pai-speaker:hover .pai-speaker__photo img { transform: scale(1.03); }
   .pai-speaker:hover .pai-speaker__photo img.zoom { transform: scale(1.74); }
   .pai-speaker__initials { position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--pai-font-serif); font-style: italic; font-size: 72px; font-weight: 400; color: var(--pai-dark); }
   .pai-speaker__photo .pai-pill { position: absolute; left: 14px; top: 14px; background: white; border: 1px solid var(--pai-border); color: var(--pai-dark); }
@@ -528,9 +528,9 @@
       <span class="pai-wordmark">Puissance<sup>AI</sup></span>
     </a>
     <nav class="pai-nav" aria-label="Navigation principale">
+      <a href="#intervenants">Intervenants</a>
       <a href="#enjeu">L'enjeu</a>
       <a href="#programme">Programme</a>
-      <a href="#intervenants">Intervenants</a>
       <a href="#ai-protect">AI Protect</a>
     </nav>
     <div class="pai-row">
@@ -590,6 +590,78 @@
           <span class="sparlann">Sparlann<small>Cabinet d'avocats</small></span>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INTERVENANTS ============ -->
+<section class="pai-section pai-section--subtle" id="intervenants">
+  <div class="pai-container">
+    <div class="pai-section__head center" data-reveal>
+      <span class="pai-eyebrow">Les intervenants</span>
+      <h2 class="pai-h2">Deux expertises. <em>Un même enjeu.</em></h2>
+    </div>
+
+    <div class="pai-grid three pai-stagger" data-reveal>
+      <!-- TODO : confirmer le titre d'Eric Blondeau -->
+      <article class="pai-card pai-speaker">
+        <div class="pai-speaker__photo">
+          <span class="pai-speaker__initials" aria-hidden="true">EB</span>
+          <img src="assets/eric.jpg" alt="Eric Blondeau" class="zoom" loading="lazy" onerror="this.remove()">
+          <span class="pai-pill pai-pill--blue">Animateur</span>
+        </div>
+        <div class="pai-speaker__body">
+          <h3>Eric Blondeau</h3>
+          <span class="pai-speaker__role">Animateur du webinaire</span>
+          <span class="pai-speaker__org">Puissance AI</span>
+          <div class="pai-speaker__links"><a href="https://www.linkedin.com/in/blondeau-eric/" target="_blank" rel="noopener"><svg class="pai-icon-outline" aria-hidden="true"><use href="#i-in"></use></svg> Profil LinkedIn</a></div>
+        </div>
+      </article>
+      <article class="pai-card pai-speaker">
+        <div class="pai-speaker__photo">
+          <span class="pai-speaker__initials" aria-hidden="true">LM</span>
+          <img src="assets/laetitia.jpg" alt="Laëtitia Le Metayer" loading="lazy" onerror="this.remove()">
+          <span class="pai-pill pai-pill--purple">Avocate</span>
+        </div>
+        <div class="pai-speaker__body">
+          <h3>Laëtitia Le Metayer</h3>
+          <span class="pai-speaker__role">Avocate — droit du numérique, données personnelles (RGPD) et propriété intellectuelle</span>
+          <span class="pai-speaker__org">Sparlann, cabinet d'avocats · Rennes</span>
+          <div class="pai-speaker__links"><a href="https://www.linkedin.com/in/la%C3%ABtitia-le-metayer/" target="_blank" rel="noopener"><svg class="pai-icon-outline" aria-hidden="true"><use href="#i-in"></use></svg> Profil LinkedIn</a></div>
+        </div>
+      </article>
+      <article class="pai-card pai-speaker">
+        <div class="pai-speaker__photo">
+          <span class="pai-speaker__initials" aria-hidden="true">SB</span>
+          <img src="assets/salah.jpg" alt="Salah-Eddine Benzakour" loading="lazy" onerror="this.remove()">
+          <span class="pai-pill pai-pill--coral">Invité</span>
+        </div>
+        <div class="pai-speaker__body">
+          <h3>Salah-Eddine Benzakour</h3>
+          <span class="pai-speaker__role">Fondateur & CEO — accompagne les dirigeants de PME/PMI/ETI dans leur transformation IA</span>
+          <span class="pai-speaker__org">Puissance AI</span>
+          <div class="pai-speaker__links"><a href="https://www.linkedin.com/in/salahbenzakour/" target="_blank" rel="noopener"><svg class="pai-icon-outline" aria-hidden="true"><use href="#i-in"></use></svg> Profil LinkedIn</a></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="pai-grid two pai-stagger" style="margin-top:var(--pai-space-lg)" data-reveal>
+      <div class="pai-card pai-card--feature pai-org">
+        <span class="pai-logo"><svg class="pai-mark pai-logo__mark" aria-hidden="true"><use href="#pai-mark-shape"></use></svg><span class="pai-wordmark">Puissance<sup>AI</sup></span></span>
+        <p class="pai-copy">Nous accompagnons les dirigeants et leurs équipes dans leur transformation IA.</p>
+        <p class="pai-copy">Notre approche part de la réalité de l'entreprise : ses objectifs, ses usages, ses équipes et ses risques.</p>
+        <span class="pai-pill pai-pill--blue" style="justify-self:start">Un regard opérationnel</span>
+      </div>
+      <div class="pai-card pai-card--feature pai-org">
+        <span class="pai-org__name">Sparlann<small>Cabinet d'avocats partenaire</small></span>
+        <p class="pai-copy">Notre cabinet d'avocats partenaire apportera son regard juridique sur les questions que soulève concrètement l'utilisation de l'IA dans l'entreprise.</p>
+        <span class="pai-pill pai-pill--purple" style="justify-self:start">Un regard juridique</span>
+      </div>
+    </div>
+
+    <div class="pai-stack" style="margin-top:var(--pai-space-2xl);justify-items:center;text-align:center" data-reveal>
+      <div class="pai-triple"><span>Un regard opérationnel.</span><span>Un regard juridique.</span><span>Des situations concrètes.</span></div>
+      <a class="pai-btn pai-btn--blue pai-btn--lg" href="#inscription" style="margin-top:8px">Je m'inscris au webinaire <span class="arrow">→</span></a>
     </div>
   </div>
 </section>
@@ -810,78 +882,6 @@
   </div>
 </section>
 
-<!-- ============ INTERVENANTS ============ -->
-<section class="pai-section pai-section--subtle" id="intervenants">
-  <div class="pai-container">
-    <div class="pai-section__head center" data-reveal>
-      <span class="pai-eyebrow">Les intervenants</span>
-      <h2 class="pai-h2">Deux expertises. <em>Un même enjeu.</em></h2>
-    </div>
-
-    <div class="pai-grid three pai-stagger" data-reveal>
-      <!-- TODO : confirmer le titre d'Eric Blondeau -->
-      <article class="pai-card pai-speaker">
-        <div class="pai-speaker__photo">
-          <span class="pai-speaker__initials" aria-hidden="true">EB</span>
-          <img src="assets/eric.jpg" alt="Eric Blondeau" class="zoom" loading="lazy" onerror="this.remove()">
-          <span class="pai-pill pai-pill--blue">Animateur</span>
-        </div>
-        <div class="pai-speaker__body">
-          <h3>Eric Blondeau</h3>
-          <span class="pai-speaker__role">Animateur du webinaire</span>
-          <span class="pai-speaker__org">Puissance AI</span>
-          <div class="pai-speaker__links"><a href="https://www.linkedin.com/in/blondeau-eric/" target="_blank" rel="noopener"><svg class="pai-icon-outline" aria-hidden="true"><use href="#i-in"></use></svg> Profil LinkedIn</a></div>
-        </div>
-      </article>
-      <article class="pai-card pai-speaker">
-        <div class="pai-speaker__photo">
-          <span class="pai-speaker__initials" aria-hidden="true">LM</span>
-          <img src="assets/laetitia.jpg" alt="Laëtitia Le Metayer" loading="lazy" onerror="this.remove()">
-          <span class="pai-pill pai-pill--purple">Avocate</span>
-        </div>
-        <div class="pai-speaker__body">
-          <h3>Laëtitia Le Metayer</h3>
-          <span class="pai-speaker__role">Avocate — droit du numérique, données personnelles (RGPD) et propriété intellectuelle</span>
-          <span class="pai-speaker__org">Sparlann, cabinet d'avocats · Rennes</span>
-          <div class="pai-speaker__links"><a href="https://www.linkedin.com/in/la%C3%ABtitia-le-metayer/" target="_blank" rel="noopener"><svg class="pai-icon-outline" aria-hidden="true"><use href="#i-in"></use></svg> Profil LinkedIn</a></div>
-        </div>
-      </article>
-      <article class="pai-card pai-speaker">
-        <div class="pai-speaker__photo">
-          <span class="pai-speaker__initials" aria-hidden="true">SB</span>
-          <img src="assets/salah.jpg" alt="Salah-Eddine Benzakour" loading="lazy" onerror="this.remove()">
-          <span class="pai-pill pai-pill--coral">Invité</span>
-        </div>
-        <div class="pai-speaker__body">
-          <h3>Salah-Eddine Benzakour</h3>
-          <span class="pai-speaker__role">Fondateur & CEO — accompagne les dirigeants de PME/PMI/ETI dans leur transformation IA</span>
-          <span class="pai-speaker__org">Puissance AI</span>
-          <div class="pai-speaker__links"><a href="https://www.linkedin.com/in/salahbenzakour/" target="_blank" rel="noopener"><svg class="pai-icon-outline" aria-hidden="true"><use href="#i-in"></use></svg> Profil LinkedIn</a></div>
-        </div>
-      </article>
-    </div>
-
-    <div class="pai-grid two pai-stagger" style="margin-top:var(--pai-space-lg)" data-reveal>
-      <div class="pai-card pai-card--feature pai-org">
-        <span class="pai-logo"><svg class="pai-mark pai-logo__mark" aria-hidden="true"><use href="#pai-mark-shape"></use></svg><span class="pai-wordmark">Puissance<sup>AI</sup></span></span>
-        <p class="pai-copy">Nous accompagnons les dirigeants et leurs équipes dans leur transformation IA.</p>
-        <p class="pai-copy">Notre approche part de la réalité de l'entreprise : ses objectifs, ses usages, ses équipes et ses risques.</p>
-        <span class="pai-pill pai-pill--blue" style="justify-self:start">Un regard opérationnel</span>
-      </div>
-      <div class="pai-card pai-card--feature pai-org">
-        <span class="pai-org__name">Sparlann<small>Cabinet d'avocats partenaire</small></span>
-        <p class="pai-copy">Notre cabinet d'avocats partenaire apportera son regard juridique sur les questions que soulève concrètement l'utilisation de l'IA dans l'entreprise.</p>
-        <span class="pai-pill pai-pill--purple" style="justify-self:start">Un regard juridique</span>
-      </div>
-    </div>
-
-    <div class="pai-stack" style="margin-top:var(--pai-space-2xl);justify-items:center;text-align:center" data-reveal>
-      <div class="pai-triple"><span>Un regard opérationnel.</span><span>Un regard juridique.</span><span>Des situations concrètes.</span></div>
-      <a class="pai-btn pai-btn--blue pai-btn--lg" href="#inscription" style="margin-top:8px">Je m'inscris au webinaire <span class="arrow">→</span></a>
-    </div>
-  </div>
-</section>
-
 <!-- ============ AI PROTECT ============ -->
 <section class="pai-section" id="ai-protect">
   <div class="pai-container">
@@ -1091,8 +1091,8 @@
       </div>
       <div class="pai-stack" style="gap:10px">
         <span class="pai-caption" style="color:rgba(255,255,255,.5)">Webinaire</span>
-        <a class="pai-copy" href="#programme">Programme</a>
         <a class="pai-copy" href="#intervenants">Intervenants</a>
+        <a class="pai-copy" href="#programme">Programme</a>
         <a class="pai-copy" href="#ai-protect">AI Protect</a>
         <a class="pai-copy" href="#inscription">Inscription</a>
       </div>
