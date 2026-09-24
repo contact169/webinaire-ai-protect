@@ -414,9 +414,9 @@
   .pai-speaker { padding: 0; overflow: hidden; display: grid; grid-template-rows: auto 1fr; }
   .pai-speaker__photo { aspect-ratio: 1 / 1; background: var(--pai-paper); border-bottom: 1px solid var(--pai-border); position: relative; overflow: hidden; }
   .pai-speaker__photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; filter: grayscale(1) contrast(1.05); transition: filter .4s var(--pai-ease-out), transform .6s var(--pai-ease-out); }
-  .pai-speaker__photo img.zoom { transform: scale(1.32); }
+  .pai-speaker__photo img.zoom { transform: scale(1.7); object-position: center 42%; }
   .pai-speaker:hover .pai-speaker__photo img { filter: none; transform: scale(1.03); }
-  .pai-speaker:hover .pai-speaker__photo img.zoom { transform: scale(1.35); }
+  .pai-speaker:hover .pai-speaker__photo img.zoom { transform: scale(1.74); }
   .pai-speaker__initials { position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--pai-font-serif); font-style: italic; font-size: 72px; font-weight: 400; color: var(--pai-dark); }
   .pai-speaker__photo .pai-pill { position: absolute; left: 14px; top: 14px; background: white; border: 1px solid var(--pai-border); color: var(--pai-dark); }
   .pai-speaker__body { padding: var(--pai-space-lg); display: grid; gap: 6px; align-content: start; }
