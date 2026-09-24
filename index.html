@@ -414,9 +414,7 @@
   .pai-speaker { padding: 0; overflow: hidden; display: grid; grid-template-rows: auto 1fr; }
   .pai-speaker__photo { aspect-ratio: 1 / 1; background: var(--pai-paper); border-bottom: 1px solid var(--pai-border); position: relative; overflow: hidden; }
   .pai-speaker__photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; transition: transform .6s var(--pai-ease-out); }
-  .pai-speaker__photo img.zoom { transform: scale(1.7); object-position: center 42%; }
   .pai-speaker:hover .pai-speaker__photo img { transform: scale(1.03); }
-  .pai-speaker:hover .pai-speaker__photo img.zoom { transform: scale(1.74); }
   .pai-speaker__photo .pai-pill { position: absolute; left: 14px; top: 14px; background: white; border: 1px solid var(--pai-border); color: var(--pai-dark); }
   .pai-speaker__body { padding: var(--pai-space-lg); display: grid; gap: 6px; align-content: start; }
   .pai-speaker__body h3 { margin: 0; font-size: 20px; letter-spacing: -.02em; line-height: 1.2; font-weight: 600; }
@@ -606,7 +604,7 @@
       <!-- TODO : confirmer le titre d'Eric Blondeau -->
       <article class="pai-card pai-speaker">
         <div class="pai-speaker__photo">
-          <img src="assets/eric.jpg" alt="Eric Blondeau" class="zoom" loading="lazy" onerror="this.remove()">
+          <img src="assets/eric.jpg" alt="Eric Blondeau" loading="lazy" onerror="this.remove()">
           <span class="pai-pill pai-pill--blue">Animateur</span>
         </div>
         <div class="pai-speaker__body">
