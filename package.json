@@ -1,0 +1,6 @@
+{
+  "name": "webinaire-ai-protect",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" }
+}

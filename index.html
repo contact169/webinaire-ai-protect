@@ -1143,9 +1143,9 @@
   (mqMobile.addEventListener ? mqMobile.addEventListener('change', placeForm) : mqMobile.addListener(placeForm));
 
   /* ---------- Configuration ---------- */
-  // TODO Brevo : renseigner l'endpoint (webhook Make/Zapier, API Brevo via proxy, etc.).
-  // Tant que la valeur est null, l'envoi est simulé côté client.
-  const REGISTRATION_ENDPOINT = null;
+  // Relais serveur vers Brevo (api/inscription.js, Vercel Serverless Function).
+  // Mettre à null pour simuler l'envoi côté client (développement local sans Vercel).
+  const REGISTRATION_ENDPOINT = '/api/inscription';
   const EVENT_START = new Date('2026-10-05T08:30:00+02:00');
   const EVENT_END = new Date('2026-10-05T10:00:00+02:00');
 
@@ -1281,7 +1281,7 @@
 
   function collectPayload() {
     const fd = new FormData(form);
-    const payload = {};
+    const payload = { website_url: (fd.get('website_url') || '').toString() };
     ['prenom', 'nom', 'email', 'organisation', 'type_organisation', 'taille_organisation', 'site_web',
      'projets_ia', 'referent_ia', 'comite_ia', 'charte_ia', 'logiciel_ia_officiel'].forEach((k) => {
       payload[k] = (fd.get(k) || '').toString().trim();
