@@ -1301,6 +1301,7 @@
     }
   });
 
+  const MEET_URL = 'https://meet.google.com/mhs-fuic-iiz';
   document.getElementById('icsBtn').addEventListener('click', () => {
     const fmt = (d) => d.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
     const ics = [
@@ -1311,9 +1312,10 @@
       'DTSTART:' + fmt(EVENT_START),
       'DTEND:' + fmt(EVENT_END),
       'SUMMARY:Webinaire AI Protect — IA en entreprise : reprendre le contrôle sans freiner les usages',
-      'DESCRIPTION:AI Act\\, charte IA : qu\'est-ce que votre entreprise doit réellement mettre en place ? Puissance AI × Sparlann. Le lien de connexion vous sera envoyé par email.',
-      'LOCATION:En ligne',
-      'URL:' + location.href.split('#')[0],
+      'DESCRIPTION:AI Act\\, charte IA : qu\'est-ce que votre entreprise doit réellement mettre en place ? Puissance AI × Sparlann.\\n\\nLien de connexion Google Meet : ' + MEET_URL,
+      'LOCATION:' + MEET_URL,
+      'URL:' + MEET_URL,
+      'X-GOOGLE-CONFERENCE:' + MEET_URL,
       'END:VEVENT', 'END:VCALENDAR'
     ].join('\r\n');
     const blob = new Blob([ics], { type: 'text/calendar;charset=utf-8' });
