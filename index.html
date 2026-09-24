@@ -483,6 +483,10 @@
   .pai-event-card--dark .pai-event-card__list { color: rgba(255,255,255,.8); }
   .pai-event-card--dark .pai-event-card__list svg { color: #7DB2FF; }
 
+  /* Formulaire : hero en desktop, section basse en mobile (déplacé par JS) */
+  .pai-register-mobile { display: none; }
+  .pai-register-mobile .pai-register__form { border: 1px solid var(--pai-border); border-radius: var(--pai-radius-xl); background: var(--pai-white); }
+
   /* Sticky mobile CTA */
   .pai-mobile-cta { display: none; position: fixed; left: 0; right: 0; bottom: 0; z-index: var(--pai-z-overlay); padding: 12px 16px calc(12px + env(safe-area-inset-bottom)); background: white; border-top: 1px solid var(--pai-border); transform: translateY(110%); transition: transform var(--pai-dur-slow) var(--pai-ease-standard); }
   .pai-mobile-cta.show { transform: translateY(0); }
@@ -493,7 +497,8 @@
     .pai-hero__inner, .pai-two, .pai-two.rev, .pai-product-hero, .pai-cta-band { grid-template-columns: 1fr; }
     .pai-grid.three, .pai-grid.four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .pai-nav { display: none; }
-    .pai-hero__panel { position: static; max-height: none; }
+    .pai-hero__panel { display: none; }
+    .pai-register-mobile { display: block; }
     .pai-footer__grid { grid-template-columns: 1fr 1fr; }
     .pai-hero { padding-top: 40px; }
   }
@@ -508,7 +513,6 @@
     .pai-cta-band { padding: 28px 22px; }
     .pai-card--feature { padding: var(--pai-space-lg); }
     .pai-bubble { max-width: 100%; }
-    .pai-hero__panel { position: static; max-height: none; }
     .pai-acc-trigger .num { width: 34px; }
     .pai-acc-panel ul { margin-left: 34px; }
   }
@@ -607,7 +611,7 @@
       </div>
     </div>
 
-    <div class="pai-hero__panel">
+    <div class="pai-hero__panel" id="formSlotDesktop">
       <div class="pai-hero__form-head">
         <span class="pai-eyebrow">Inscription</span>
         <h2 class="pai-h3">Réservez <em>votre place.</em></h2>
@@ -1062,6 +1066,18 @@
   </div>
 </section>
 
+<!-- ============ INSCRIPTION (emplacement mobile / tablette) ============ -->
+<section class="pai-section pai-section--subtle pai-register-mobile" id="inscription-mobile">
+  <div class="pai-container">
+    <div class="pai-section__head">
+      <span class="pai-eyebrow">Inscription</span>
+      <h2 class="pai-h2">Réservez <em>votre place.</em></h2>
+      <p class="pai-lead">Gratuit, en ligne, inscription obligatoire. Vous recevrez le lien de connexion par email.</p>
+    </div>
+    <div id="formSlotMobile"></div>
+  </div>
+</section>
+
 </main>
 
 <!-- ============ FOOTER ============ -->
@@ -1106,6 +1122,18 @@
 <script>
 (function () {
   'use strict';
+
+  /* ---------- Emplacement du formulaire : hero (desktop) / bas de page (mobile) ---------- */
+  const formCard = document.getElementById('inscription');
+  const slotDesktop = document.getElementById('formSlotDesktop');
+  const slotMobile = document.getElementById('formSlotMobile');
+  const mqMobile = window.matchMedia('(max-width: 989px)');
+  const placeForm = () => {
+    const target = mqMobile.matches ? slotMobile : slotDesktop;
+    if (formCard && target && formCard.parentElement !== target) target.appendChild(formCard);
+  };
+  placeForm();
+  (mqMobile.addEventListener ? mqMobile.addEventListener('change', placeForm) : mqMobile.addListener(placeForm));
 
   /* ---------- Configuration ---------- */
   // TODO Brevo : renseigner l'endpoint (webhook Make/Zapier, API Brevo via proxy, etc.).
